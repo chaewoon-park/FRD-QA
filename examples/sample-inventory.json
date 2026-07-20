@@ -1,0 +1,20 @@
+{
+  "project": "sample-product-page",
+  "design_system_version": "1.6",
+  "scope": ["button", "selection-control"],
+  "components": [
+    {
+      "id": "button",
+      "implemented_types": ["filled-primary", "outlined"],
+      "reviewed": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"],
+      "evidence": ["storybook/button", "tests/button-accessibility.spec.ts"]
+    },
+    {
+      "id": "selection-control",
+      "implemented_types": ["checkbox", "radio"],
+      "reviewed": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"],
+      "evidence": ["storybook/selection-control", "tests/selection-control.spec.ts"]
+    }
+  ]
+}
+

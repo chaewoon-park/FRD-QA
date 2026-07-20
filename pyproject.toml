@@ -1,0 +1,22 @@
+[build-system]
+requires = ['setuptools>=68']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'frd-qa'
+version = '0.1.0'
+description = 'Samsung.com Design System v1.6 QA CLI'
+requires-python = '>=3.10'
+dependencies = []
+
+[project.scripts]
+frd-qa = 'frdqa.cli:main'
+
+[tool.setuptools]
+package-dir = {'' = 'src'}
+
+[tool.setuptools.packages.find]
+where = ['src']
+
+[tool.setuptools.package-data]
+frdqa = ['data/*.json']

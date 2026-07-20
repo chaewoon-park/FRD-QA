@@ -1,0 +1,54 @@
+{
+  "document": {
+    "title": "Samsung.com Design System v1.6 (KR)",
+    "version": "1.6",
+    "published": "2025-09-18",
+    "page_count": 620,
+    "source_location": "../../../../DesignSystem_v1.6_Document_KR (Copy).pdf"
+  },
+  "principles": [
+    {"id": "ux", "name": "UX Principle", "pages": [26, 29], "criteria": ["premium", "exclusive", "integrated"]},
+    {"id": "writing", "name": "Writing Principle", "pages": [30, 32], "criteria": ["actionability", "clarity", "consistency", "salience-of-information"]}
+  ],
+  "foundations": [
+    {"id": "z-index", "name": "Z-index", "pages": [34, 35], "rules": {"progress-circle": 3200, "cookie": 3000, "modal": 2999, "floating": 2500, "gnb": 2000, "lnb": 1999, "feedback": 999}},
+    {"id": "color", "name": "Color", "pages": [36, 45], "rules": {"black": "#000000", "white": "#FFFFFF", "skyblue": "#2189FF", "skyblue-dark": "#006BEA", "skyblue-light": "#68AEFF", "coral": "#EF3434", "contrast-minimum": "4.5:1"}},
+    {"id": "typeface", "name": "Typeface", "pages": [46, 52], "rules": {"display-font": "Samsung Sharp Sans Bold", "body-font": "Samsung One", "line-height-32-and-up": 1.2, "line-height-under-32": 1.33}},
+    {"id": "iconography", "name": "Iconography", "pages": [53, 81], "rules": {"artboard": "96x96", "export": "SVG", "regular-sizes": [24, 36, 48], "bold-sizes": [12, 16, 24], "light-sizes": [64, 72, 96]}},
+    {"id": "radius", "name": "Radius", "pages": [82, 86], "rules": {"values": [4, 6, 8, 20, 24]}},
+    {"id": "dimmed", "name": "Dimmed", "pages": [87, 88], "rules": {"color": "#000000", "opacity": [0.6, 0.9]}},
+    {"id": "shadow", "name": "Shadow", "pages": [89, 90], "rules": {"shadow-01": "0 1px 3px #00000033", "shadow-02": "0 4px 10px -2px #00000033"}},
+    {"id": "motion", "name": "Motion", "pages": [91, 99], "rules": {"linear": [0, 0, 1, 1], "expressive": [0, 0.18, 0.07, 1], "standard": [0.35, 0, 0.36, 1], "duration-ms": [200, 300, 400, 500]}},
+    {"id": "states", "name": "States", "pages": [100, 110], "rules": {"baseline": ["normal", "hover", "pressed", "selected", "disabled", "resting", "typing", "error", "success"]}}
+  ],
+  "elements": [
+    {"id": "badge", "name": "Badge", "pages": [111, 121], "definition": "콘텐츠의 부가 정보를 컴포넌트 인근에 표시", "types": ["filled-label", "dot", "number"], "review_dimensions": ["definition", "type", "usage", "visual", "responsive", "accessibility"]},
+    {"id": "breadcrumb", "name": "Breadcrumb", "pages": [122, 131], "definition": "현재 페이지의 탐색 계층과 상위 이동 경로를 표시", "types": ["standard"], "review_dimensions": ["definition", "type", "usage", "visual", "responsive", "accessibility"]},
+    {"id": "button", "name": "Button (CTA)", "pages": [132, 199], "definition": "행동 실행 또는 페이지 이동을 지원", "types": ["filled-primary", "filled-emphasis", "outlined", "underlined", "label", "icon"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "chip", "name": "Chip", "pages": [200, 217], "definition": "항목이나 속성을 표시하고 필터 또는 동작을 지원", "types": ["action", "select"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "divider", "name": "Divider", "pages": [218, 226], "definition": "화면 내 관련 콘텐츠 그룹을 시각적으로 구분", "types": ["horizontal", "vertical"], "review_dimensions": ["definition", "type", "usage", "visual", "responsive", "accessibility"]},
+    {"id": "fab", "name": "FAB", "pages": [227, 235], "definition": "지속 노출할 주요 행동을 고정 위치에 표시", "types": ["go-to-top"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "filter", "name": "Filter", "pages": [236, 250], "definition": "선택지를 탐색하고 특정 조건을 설정", "types": ["standard"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "gallery-controls", "name": "Gallery Controls", "pages": [251, 263], "definition": "Gallery 기능 조작 지원", "types": ["zoom-buttons", "view-buttons", "snackbar"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "hyperlink", "name": "Hyperlink", "pages": [264, 272], "definition": "관련 정보를 제공하는 다른 페이지로 이동", "types": ["standard"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "indicator", "name": "Indicator", "pages": [273, 295], "definition": "콘텐츠 범위와 현재 위치를 표시하고 이동 지원", "types": ["dot", "arrow", "number", "scroll", "bar"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "list", "name": "List", "pages": [296, 307], "definition": "콘텐츠 항목을 일정한 구조로 나열", "types": ["header", "item-default", "item-indent", "item-selection"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "menu", "name": "Menu", "pages": [308, 319], "definition": "선택 가능한 옵션 목록을 일시적으로 표시", "types": ["dropdown", "icon-leading", "select-field"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "number-counter", "name": "Number Counter", "pages": [320, 328], "definition": "수량 입력과 증감을 지원", "types": ["standard"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "option-chip", "name": "Option Chip", "pages": [329, 340], "definition": "제품 옵션을 표시하여 빠른 선택 지원", "types": ["color", "label"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "option-selector", "name": "Option Selector", "pages": [341, 358], "definition": "다양한 옵션 정보와 조합을 제공하고 선택 지원", "types": ["image", "label", "meta", "color"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "popup", "name": "Popup", "pages": [359, 416], "definition": "화면 이탈 없이 정보와 의사결정 선택지를 제공", "types": ["confirmation", "input-data", "notification", "contents"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "progress", "name": "Progress", "pages": [417, 429], "definition": "작업이나 단계의 진행 상황을 표시", "types": ["linear", "circular"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "rating", "name": "Rating", "pages": [430, 438], "definition": "상품 평가나 의견을 요약 표시", "types": ["marked", "empty"], "review_dimensions": ["definition", "type", "usage", "visual", "responsive", "accessibility"]},
+    {"id": "scroll", "name": "Scroll", "pages": [439, 448], "definition": "영역 내 이동으로 화면 밖 콘텐츠 탐색 지원", "types": ["horizontal", "vertical"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "search", "name": "Search", "pages": [449, 463], "definition": "텍스트 입력을 통한 빠른 정보 검색 지원", "types": ["gnb-search", "search-bar", "search-panel"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "selection-control", "name": "Selection Control", "pages": [464, 480], "definition": "옵션 선택 또는 설정 변경 지원", "types": ["checkbox", "radio", "switch"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "slider", "name": "Slider", "pages": [481, 493], "definition": "일정 범위의 값 또는 구간 조정 지원", "types": ["standard", "compare", "filter"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility"]},
+    {"id": "snackbar", "name": "Snackbar", "pages": [494, 505], "definition": "일시적인 간단한 메시지나 피드백 제공", "types": ["standard"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "spec", "name": "Spec", "pages": [506, 521], "definition": "제품 상세 정보를 선택적으로 표시", "types": ["standard", "highlight", "accordion"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "stepper", "name": "Stepper", "pages": [522, 534], "definition": "전체 단계와 현재 진행 상태를 표시", "types": ["standard"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "tab", "name": "Tab", "pages": [535, 573], "definition": "동일 계층 콘텐츠 그룹 간 전환 지원", "types": ["standard", "icon"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "text-field", "name": "Text Field", "pages": [574, 608], "definition": "텍스트 입력과 편집 지원", "types": ["single-line", "multi-line", "single-entry"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]},
+    {"id": "tooltip", "name": "Tooltip", "pages": [609, 620], "definition": "호버 또는 탭 시 관련 추가 정보를 일시 제공", "types": ["marked", "multi-language"], "review_dimensions": ["definition", "type", "usage", "visual", "state", "responsive", "accessibility", "writing"]}
+  ]
+}
