@@ -9,6 +9,7 @@ from typing import Any
 
 
 DEFAULT_CATALOG = Path(__file__).resolve().parent / "data" / "design-system-v1.6.json"
+DEFAULT_TOKENS = Path(__file__).resolve().parent / "data" / "design-tokens-v1.6.json"
 
 
 @dataclass(frozen=True)
@@ -74,6 +75,91 @@ def check_catalog(catalog: dict[str, Any]) -> list[Finding]:
                 for field in ("definition", "types", "review_dimensions"):
                     if not item.get(field):
                         findings.append(Finding("error", "ELEMENT_FIELD", item_id, f"{field} 값이 필요합니다."))
+    return findings
+
+
+def _normalize_family(name: str) -> str:
+    return "".join(str(name).lower().split())
+
+
+def check_tokens(catalog: dict[str, Any], tokens: dict[str, Any]) -> list[Finding]:
+    """토큰 파일 무결성 + 카탈로그(문서 규칙) 교차검증."""
+    findings: list[Finding] = []
+    meta = tokens.get("meta", {})
+
+    # 1) 버전·출처 무결성
+    if meta.get("design_system_version") != catalog.get("document", {}).get("version"):
+        findings.append(Finding("error", "TOKENS_VERSION", "meta", "토큰 버전이 카탈로그와 다릅니다."))
+    source = meta.get("source", {})
+    if not source.get("sha256"):
+        findings.append(Finding("error", "TOKENS_PROVENANCE", "meta", "소스 파일 sha256이 없습니다."))
+
+    # 2) meta.counts와 실제 개수 일치
+    counts = meta.get("counts", {})
+    for group in ("colors", "typography", "effects", "grids"):
+        actual = len(tokens.get(group, {}))
+        if counts.get(group) != actual:
+            findings.append(
+                Finding("error", "TOKENS_COUNT", group, f"meta.counts={counts.get(group)} 실제={actual}")
+            )
+
+    # 3) 소스 충돌(동일 이름·다른 값) — 디자인 파일 자체 결함
+    for conflict in tokens.get("conflicts", []):
+        findings.append(
+            Finding("warning", "SOURCE_CONFLICT", conflict.get("name", "?"), "원본 .fig에 중복 정의된 스타일입니다.")
+        )
+
+    foundations = {f["id"]: f for f in catalog.get("foundations", []) if isinstance(f, dict)}
+
+    # 4) 색상 교차검증: 카탈로그 색상 규칙값이 토큰 팔레트에 존재해야 함
+    token_hexes = {
+        str(v.get("$value", "")).upper()
+        for v in tokens.get("colors", {}).values()
+        if isinstance(v, dict)
+    }
+    color_rules = foundations.get("color", {}).get("rules", {})
+    for rule_name, rule_value in color_rules.items():
+        if isinstance(rule_value, str) and rule_value.startswith("#"):
+            if rule_value.upper() not in token_hexes:
+                findings.append(
+                    Finding("error", "COLOR_MISSING", rule_name, f"카탈로그 색상 {rule_value}이 토큰에 없습니다.")
+                )
+
+    # 5) 타이포 교차검증: 폰트 패밀리 + 행간 규칙(32 이상 1.2 / 미만 1.33, 반올림 ±1px)
+    typeface_rules = foundations.get("typeface", {}).get("rules", {})
+    token_families = {
+        _normalize_family(f"{v.get('family', '')} {v.get('style', '')}")
+        for v in tokens.get("typography", {}).values()
+        if isinstance(v, dict)
+    } | {
+        _normalize_family(v.get("family", ""))
+        for v in tokens.get("typography", {}).values()
+        if isinstance(v, dict)
+    }
+    for rule_name in ("display-font", "body-font"):
+        expected = typeface_rules.get(rule_name)
+        if expected and _normalize_family(expected) not in token_families:
+            findings.append(
+                Finding("error", "TYPEFACE_MISSING", rule_name, f"카탈로그 폰트 '{expected}'이 토큰에 없습니다.")
+            )
+    for name, token in tokens.get("typography", {}).items():
+        if not isinstance(token, dict):
+            continue
+        size = token.get("size")
+        line_height = (token.get("lineHeight") or {}).get("value")
+        units = (token.get("lineHeight") or {}).get("units")
+        if not isinstance(size, (int, float)) or not isinstance(line_height, (int, float)) or units != "PIXELS":
+            continue
+        ratio = 1.2 if size >= 32 else 1.33
+        if abs(line_height - size * ratio) > 1:
+            findings.append(
+                Finding(
+                    "warning",
+                    "LINE_HEIGHT_RULE",
+                    name,
+                    f"행간 {line_height}px가 규칙({size}×{ratio}={size * ratio:.1f}±1)을 벗어납니다.",
+                )
+            )
     return findings
 
 
@@ -158,6 +244,9 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
     commands = result.add_subparsers(dest="command", required=True)
     commands.add_parser("catalog-check", help="카탈로그 무결성을 검사합니다.")
+    tokens_parser = commands.add_parser("tokens-check", help="토큰 무결성과 카탈로그 교차검증을 수행합니다.")
+    tokens_parser.add_argument("--tokens", type=Path, default=DEFAULT_TOKENS)
+    tokens_parser.add_argument("--output", type=Path)
     audit_parser = commands.add_parser("audit", help="구현 인벤토리의 QA 누락을 검사합니다.")
     audit_parser.add_argument("inventory", type=Path)
     audit_parser.add_argument("--output", type=Path)
@@ -171,6 +260,9 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "catalog-check":
             findings = check_catalog(catalog)
             title = "Design System 카탈로그 검사"
+        elif args.command == "tokens-check":
+            findings = check_tokens(catalog, load_json(args.tokens))
+            title = "Design System 토큰 검사"
         else:
             findings = audit(catalog, load_json(args.inventory))
             title = f"FRD-QA 감사 보고서: {args.inventory.name}"
