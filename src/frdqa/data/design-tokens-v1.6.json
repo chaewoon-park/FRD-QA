@@ -1,0 +1,1486 @@
+{
+  "colors": {
+    "#000000": {
+      "$type": "color",
+      "$value": "#000000",
+      "figma_nodes": [
+        "1:558"
+      ]
+    },
+    "#DDDDDD": {
+      "$type": "color",
+      "$value": "#DDDDDD",
+      "figma_nodes": [
+        "1:559"
+      ]
+    },
+    "#F7F7F7": {
+      "$type": "color",
+      "$value": "#F7F7F7",
+      "figma_nodes": [
+        "1:557"
+      ]
+    },
+    "#FFFFFF": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "figma_nodes": [
+        "1:556"
+      ]
+    },
+    "Base/White": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "figma_nodes": [
+        "1:903"
+      ]
+    },
+    "Basic/White": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "figma_nodes": [
+        "1:10785",
+        "1:12747"
+      ]
+    },
+    "Grayscale/0_F7": {
+      "$type": "color",
+      "$value": "#F7F7F7",
+      "figma_nodes": [
+        "1:98",
+        "1:4224",
+        "1:10258"
+      ]
+    },
+    "Grayscale/1_EE": {
+      "$type": "color",
+      "$value": "#EEEEEE",
+      "figma_nodes": [
+        "1:71",
+        "1:940",
+        "1:4044"
+      ]
+    },
+    "Grayscale/2_DD": {
+      "$type": "color",
+      "$value": "#DDDDDD",
+      "figma_nodes": [
+        "1:564",
+        "1:3595",
+        "1:5640",
+        "1:10412",
+        "1:10809"
+      ]
+    },
+    "Grayscale/3_BB": {
+      "$type": "color",
+      "$value": "#BBBBBB",
+      "figma_nodes": [
+        "1:110",
+        "1:1854",
+        "1:4501",
+        "1:7688",
+        "1:8465"
+      ]
+    },
+    "Grayscale/4_AA": {
+      "$type": "color",
+      "$value": "#AAAAAA",
+      "figma_nodes": [
+        "1:362",
+        "1:1531",
+        "1:6754",
+        "1:10413",
+        "1:12131"
+      ]
+    },
+    "Grayscale/5_8F": {
+      "$type": "color",
+      "$value": "#8F8F8F",
+      "figma_nodes": [
+        "1:41",
+        "1:5652"
+      ]
+    },
+    "Grayscale/6_75": {
+      "$type": "color",
+      "$value": "#757575",
+      "figma_nodes": [
+        "1:111",
+        "1:363",
+        "1:2341",
+        "1:2344",
+        "1:7972"
+      ]
+    },
+    "Grayscale/7_55": {
+      "$type": "color",
+      "$value": "#555555",
+      "figma_nodes": [
+        "1:9",
+        "1:132",
+        "1:5641",
+        "1:8480"
+      ]
+    },
+    "Grayscale/8_31": {
+      "$type": "color",
+      "$value": "#313131",
+      "figma_nodes": [
+        "1:241",
+        "1:927",
+        "1:9859",
+        "1:10994"
+      ]
+    },
+    "Grayscale/9_1C": {
+      "$type": "color",
+      "$value": "#1C1C1C",
+      "figma_nodes": [
+        "1:902",
+        "1:4220",
+        "1:9164"
+      ]
+    },
+    "Grayscale/gray10": {
+      "$type": "color",
+      "$value": "#2E2E33",
+      "figma_nodes": [
+        "1:12233"
+      ]
+    },
+    "Neutral color/Neutral beige": {
+      "$type": "color",
+      "$value": "#F7F5F2",
+      "figma_nodes": [
+        "1:12230"
+      ]
+    },
+    "Neutral color/Neutral blue": {
+      "$type": "color",
+      "$value": "#F5F7FE",
+      "figma_nodes": [
+        "1:12229"
+      ]
+    },
+    "Neutral color/Neutral orange": {
+      "$type": "color",
+      "$value": "#FEF6F3",
+      "figma_nodes": [
+        "1:12231"
+      ]
+    },
+    "Neutral color/Neutral pink": {
+      "$type": "color",
+      "$value": "#F6F0F5",
+      "figma_nodes": [
+        "1:12232"
+      ]
+    },
+    "Primary color/Black": {
+      "$type": "color",
+      "$value": "#000000",
+      "figma_nodes": [
+        "1:6",
+        "1:24",
+        "1:72",
+        "1:926",
+        "1:1856",
+        "1:12198",
+        "1:12248"
+      ]
+    },
+    "Primary color/Skyblue": {
+      "$type": "color",
+      "$value": "#2189FF",
+      "figma_nodes": [
+        "1:40",
+        "1:91",
+        "1:1852",
+        "1:2342",
+        "1:4140",
+        "1:9338"
+      ]
+    },
+    "Primary color/Skyblue dark": {
+      "$type": "color",
+      "$value": "#006BEA",
+      "figma_nodes": [
+        "1:561",
+        "1:8812"
+      ]
+    },
+    "Primary color/Skyblue light": {
+      "$type": "color",
+      "$value": "#68AEFF",
+      "figma_nodes": [
+        "1:4",
+        "1:131",
+        "1:8661",
+        "1:8816"
+      ]
+    },
+    "Primary color/White": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "figma_nodes": [
+        "1:5",
+        "1:23",
+        "1:5653",
+        "1:7971",
+        "1:9897",
+        "1:10808",
+        "1:12186"
+      ]
+    },
+    "Primary/Black": {
+      "$type": "color",
+      "$value": "#000000",
+      "figma_nodes": [
+        "1:4045"
+      ]
+    },
+    "Primary/White": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "figma_nodes": [
+        "1:3",
+        "1:1530",
+        "1:12746"
+      ]
+    },
+    "Secondary color/Coral": {
+      "$type": "color",
+      "$value": "#EF3434",
+      "figma_nodes": [
+        "1:1584"
+      ]
+    },
+    "Secondary color/Coral dark": {
+      "$type": "color",
+      "$value": "#D62E2E",
+      "figma_nodes": [
+        "1:1535"
+      ]
+    },
+    "Secondary color/Coral light": {
+      "$type": "color",
+      "$value": "#F36E6E",
+      "figma_nodes": [
+        "1:942",
+        "1:1583",
+        "1:2343"
+      ]
+    },
+    "Secondary color/Orange": {
+      "$type": "color",
+      "$value": "#F66700",
+      "figma_nodes": [
+        "1:6214"
+      ]
+    },
+    "Secondary color/Orange dark": {
+      "$type": "color",
+      "$value": "#C74700",
+      "figma_nodes": [
+        "1:5664"
+      ]
+    },
+    "Secondary color/Seablue": {
+      "$type": "color",
+      "$value": "#00B3E3",
+      "figma_nodes": [
+        "1:4139"
+      ]
+    },
+    "Secondary color/Teal": {
+      "$type": "color",
+      "$value": "#00838F",
+      "figma_nodes": [
+        "1:5941"
+      ]
+    },
+    "Secondary color/Teal dark": {
+      "$type": "color",
+      "$value": "#007D89",
+      "figma_nodes": [
+        "1:5663"
+      ]
+    },
+    "black": {
+      "$type": "color",
+      "$value": "#000000",
+      "figma_nodes": [
+        "1:563"
+      ]
+    },
+    "gray 50": {
+      "$type": "color",
+      "$value": "#AAAAAA",
+      "figma_nodes": [
+        "1:569"
+      ]
+    },
+    "gray 70": {
+      "$type": "color",
+      "$value": "#757575",
+      "figma_nodes": [
+        "1:566"
+      ]
+    },
+    "sky blue": {
+      "$type": "color",
+      "$value": "#2189FF",
+      "figma_nodes": [
+        "1:560"
+      ]
+    },
+    "sky blue light": {
+      "$type": "color",
+      "$value": "#68AEFF",
+      "figma_nodes": [
+        "1:568"
+      ]
+    },
+    "white": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "figma_nodes": [
+        "1:394",
+        "1:10577"
+      ]
+    },
+    "임시컬러 (나중에 재적용 필요)/don't": {
+      "$type": "color",
+      "$value": "#FF5275",
+      "figma_nodes": [
+        "1:4223"
+      ]
+    }
+  },
+  "conflicts": [
+    {
+      "dropped": {
+        "$type": "typography",
+        "family": "SamsungOne",
+        "letterSpacing": {
+          "units": "PERCENT",
+          "value": 0.0
+        },
+        "lineHeight": {
+          "units": "PIXELS",
+          "value": 38.0
+        },
+        "platform": "desktop",
+        "size": 28.0,
+        "style": "400"
+      },
+      "kept": {
+        "$type": "typography",
+        "family": "SamsungOne",
+        "letterSpacing": {
+          "units": "PERCENT",
+          "value": 0.0
+        },
+        "lineHeight": {
+          "units": "PIXELS",
+          "value": 30.0
+        },
+        "platform": "desktop",
+        "size": 22.0,
+        "style": "400"
+      },
+      "name": "Global/Desktop/Title/Title 03 (400)",
+      "node": "1:12217"
+    }
+  ],
+  "effects": {
+    "Button Shadow": {
+      "$type": "effect",
+      "effects": [
+        {
+          "alpha": 0.72,
+          "color": "#000000",
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "radius": 3.0,
+          "spread": 0.0,
+          "type": "DROP_SHADOW"
+        }
+      ],
+      "figma_nodes": [
+        "1:6213",
+        "1:10001"
+      ]
+    },
+    "Shadow 01": {
+      "$type": "effect",
+      "effects": [
+        {
+          "alpha": 0.2,
+          "color": "#000000",
+          "offset": [
+            0.0,
+            1.0
+          ],
+          "radius": 3.0,
+          "spread": 0.0,
+          "type": "DROP_SHADOW"
+        }
+      ],
+      "figma_nodes": [
+        "1:10806",
+        "1:10858"
+      ]
+    },
+    "Shadow 02": {
+      "$type": "effect",
+      "effects": [
+        {
+          "alpha": 0.2,
+          "color": "#000000",
+          "offset": [
+            0.0,
+            4.0
+          ],
+          "radius": 10.0,
+          "spread": -2.0,
+          "type": "DROP_SHADOW"
+        }
+      ],
+      "figma_nodes": [
+        "1:8411"
+      ]
+    }
+  },
+  "grids": {
+    "12 column": {
+      "$type": "grid",
+      "figma_nodes": [
+        "1:10805"
+      ],
+      "grids": [
+        {
+          "axis": "X",
+          "gutterSize": 28.0,
+          "numSections": 12,
+          "pattern": "STRIPES",
+          "sectionSize": 121.0
+        }
+      ]
+    },
+    "Document": {
+      "$type": "grid",
+      "figma_nodes": [
+        "1:12221"
+      ],
+      "grids": [
+        {
+          "axis": "X",
+          "gutterSize": 28.0,
+          "numSections": 12,
+          "pattern": "STRIPES",
+          "sectionSize": 121.0
+        }
+      ]
+    },
+    "Mobile (360)": {
+      "$type": "grid",
+      "figma_nodes": [
+        "1:4043"
+      ],
+      "grids": [
+        {
+          "axis": "X",
+          "gutterSize": 16.0,
+          "numSections": 4,
+          "pattern": "STRIPES",
+          "sectionSize": 66.0
+        }
+      ]
+    },
+    "PC (1440)": {
+      "$type": "grid",
+      "figma_nodes": [
+        "1:4222",
+        "1:10804"
+      ],
+      "grids": [
+        {
+          "axis": "X",
+          "gutterSize": 24.0,
+          "numSections": 12,
+          "pattern": "STRIPES",
+          "sectionSize": 94.0
+        }
+      ]
+    }
+  },
+  "meta": {
+    "counts": {
+      "colors": 43,
+      "components": 1923,
+      "conflicts": 1,
+      "effects": 3,
+      "grids": 4,
+      "nodes": 33937,
+      "typography": 51
+    },
+    "design_system_version": "1.6",
+    "extracted_at": "2026-07-22T05:01:46+00:00",
+    "extractor": "tools/extract_fig_tokens.py",
+    "source": {
+      "figma_exported_at": "2026-07-16T07:23:29.826Z",
+      "file": "DesignSystem_v1.6_Document_KR.fig",
+      "sha256": "31406ff4b2c6e575c76a2b76bcd83e11ecd9c24c30edce79c501600697c48176",
+      "size_bytes": 38012983
+    }
+  },
+  "typography": {
+    "Global/Desktop/Body/Body 01 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:10995"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 24.0
+      },
+      "platform": "desktop",
+      "size": 18.0,
+      "style": "400"
+    },
+    "Global/Desktop/Body/Body 02 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:4230"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "desktop",
+      "size": 14.0,
+      "style": "700"
+    },
+    "Global/Desktop/Body/Body 04 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:7973"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "desktop",
+      "size": 14.0,
+      "style": "400"
+    },
+    "Global/Desktop/Body/Body 04 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:8028"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "desktop",
+      "size": 14.0,
+      "style": "700"
+    },
+    "Global/Desktop/Display/Display 05": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:565"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 39.0
+      },
+      "platform": "desktop",
+      "size": 32.0,
+      "style": "Bold"
+    },
+    "Global/Desktop/Title/Title 03 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:12207"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 30.0
+      },
+      "platform": "desktop",
+      "size": 22.0,
+      "style": "400"
+    },
+    "Global/Mobile/Body/Body 01 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:6174"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 22.0
+      },
+      "platform": "mobile",
+      "size": 16.0,
+      "style": "400"
+    },
+    "Global/Mobile/Body/Body 01 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:9249",
+        "1:10835"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 22.0
+      },
+      "platform": "mobile",
+      "size": 16.0,
+      "style": "700"
+    },
+    "Global/Mobile/Body/Body 02 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:135",
+        "1:9900"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "mobile",
+      "size": 14.0,
+      "style": "400"
+    },
+    "Global/Mobile/Body/Body 02 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:3090",
+        "1:8372"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "mobile",
+      "size": 14.0,
+      "style": "700"
+    },
+    "Global/Mobile/Body/Body 03 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:1582"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 16.0
+      },
+      "platform": "mobile",
+      "size": 12.0,
+      "style": "400"
+    },
+    "Global/Mobile/Body/Body 03 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:2809"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 16.0
+      },
+      "platform": "mobile",
+      "size": 12.0,
+      "style": "700"
+    },
+    "Global/Mobile/Body/Body 04 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:1581"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 14.0
+      },
+      "platform": "mobile",
+      "size": 10.0,
+      "style": "400"
+    },
+    "Global/Mobile/Body/Body 04 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:6020"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 14.0
+      },
+      "platform": "mobile",
+      "size": 10.0,
+      "style": "700"
+    },
+    "Global/Mobile/Display/Display 01": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12210"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 39.0
+      },
+      "platform": "mobile",
+      "size": 32.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Display/Display 03": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12211"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 35.0
+      },
+      "platform": "mobile",
+      "size": 26.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Display/Display 04": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:4041"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 32.0
+      },
+      "platform": "mobile",
+      "size": 24.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Display/Display 05": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12212"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 30.0
+      },
+      "platform": "mobile",
+      "size": 22.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Display/Display 06": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12213"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 27.0
+      },
+      "platform": "mobile",
+      "size": 20.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Display/Display 07": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12214"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 24.0
+      },
+      "platform": "mobile",
+      "size": 18.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Display/Display 08": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:6696"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 22.0
+      },
+      "platform": "mobile",
+      "size": 16.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Display/Display 09": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12215"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "mobile",
+      "size": 14.0,
+      "style": "Bold"
+    },
+    "Global/Mobile/Title/Title 01 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:5368"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 32.0
+      },
+      "platform": "mobile",
+      "size": 24.0,
+      "style": "700"
+    },
+    "Global/Mobile/Title/Title 02 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:12206"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 30.0
+      },
+      "platform": "mobile",
+      "size": 22.0,
+      "style": "700"
+    },
+    "Global/Mobile/Title/Title 03 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:12208"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 27.0
+      },
+      "platform": "mobile",
+      "size": 20.0,
+      "style": "700"
+    },
+    "Global/Mobile/Title/Title 04 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:12209"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 24.0
+      },
+      "platform": "mobile",
+      "size": 18.0,
+      "style": "400"
+    },
+    "Global/Mobile/Title/Title 04 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:4371"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 24.0
+      },
+      "platform": "mobile",
+      "size": 18.0,
+      "style": "700"
+    },
+    "Global/PC/Body/Body 01 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:4960"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 27.0
+      },
+      "platform": "pc",
+      "size": 20.0,
+      "style": "400"
+    },
+    "Global/PC/Body/Body 01 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:6232"
+      ],
+      "letterSpacing": {
+        "units": "PIXELS",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 27.0
+      },
+      "platform": "pc",
+      "size": 20.0,
+      "style": "700"
+    },
+    "Global/PC/Body/Body 02 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:567",
+        "1:10860"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 24.0
+      },
+      "platform": "pc",
+      "size": 18.0,
+      "style": "400"
+    },
+    "Global/PC/Body/Body 02 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:562",
+        "1:4221",
+        "1:10859"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 24.0
+      },
+      "platform": "pc",
+      "size": 18.0,
+      "style": "700"
+    },
+    "Global/PC/Body/Body 03 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:941",
+        "1:7371"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 22.0
+      },
+      "platform": "pc",
+      "size": 16.0,
+      "style": "400"
+    },
+    "Global/PC/Body/Body 03 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:100",
+        "1:1853",
+        "1:7370"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 22.0
+      },
+      "platform": "pc",
+      "size": 16.0,
+      "style": "700"
+    },
+    "Global/PC/Body/Body 04 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:73",
+        "1:113",
+        "1:364",
+        "1:3088"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "pc",
+      "size": 14.0,
+      "style": "400"
+    },
+    "Global/PC/Body/Body 04 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:112",
+        "1:3089",
+        "1:8151"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 19.0
+      },
+      "platform": "pc",
+      "size": 14.0,
+      "style": "700"
+    },
+    "Global/PC/Body/Body 05 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:229",
+        "1:1855",
+        "1:8850"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 16.0
+      },
+      "platform": "pc",
+      "size": 12.0,
+      "style": "400"
+    },
+    "Global/PC/Body/Body 05 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:268",
+        "1:6753",
+        "1:10000"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 16.0
+      },
+      "platform": "pc",
+      "size": 12.0,
+      "style": "700"
+    },
+    "Global/PC/Display/Display 01": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12219"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 72.0
+      },
+      "platform": "pc",
+      "size": 60.0,
+      "style": "Bold"
+    },
+    "Global/PC/Display/Display 02": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:12220"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 68.0
+      },
+      "platform": "pc",
+      "size": 56.0,
+      "style": "Bold"
+    },
+    "Global/PC/Display/Display 03": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:6399"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 58.0
+      },
+      "platform": "pc",
+      "size": 48.0,
+      "style": "Bold"
+    },
+    "Global/PC/Display/Display 04": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:4042",
+        "1:12249"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 48.0
+      },
+      "platform": "pc",
+      "size": 40.0,
+      "style": "Bold"
+    },
+    "Global/PC/Display/Display 05": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:4219"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 38.0
+      },
+      "platform": "pc",
+      "size": 28.0,
+      "style": "Bold"
+    },
+    "Global/PC/Display/Display 06": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:935",
+        "1:939",
+        "1:8811"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 32.0
+      },
+      "platform": "pc",
+      "size": 24.0,
+      "style": "Bold"
+    },
+    "Global/PC/Display/Display 07": {
+      "$type": "typography",
+      "family": "Samsung Sharp Sans",
+      "figma_nodes": [
+        "1:99",
+        "1:1857",
+        "1:9339",
+        "1:12234"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 22.0
+      },
+      "platform": "pc",
+      "size": 16.0,
+      "style": "Bold"
+    },
+    "Global/PC/Title/Title 01 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:5301"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 44.0
+      },
+      "platform": "pc",
+      "size": 36.0,
+      "style": "700"
+    },
+    "Global/PC/Title/Title 02 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:12216"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 39.0
+      },
+      "platform": "pc",
+      "size": 32.0,
+      "style": "400"
+    },
+    "Global/PC/Title/Title 03 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:6400"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 38.0
+      },
+      "platform": "pc",
+      "size": 28.0,
+      "style": "700"
+    },
+    "Global/PC/Title/Title 04 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:1534"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 32.0
+      },
+      "platform": "pc",
+      "size": 24.0,
+      "style": "400"
+    },
+    "Global/PC/Title/Title 04 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:5367",
+        "1:10807"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 32.0
+      },
+      "platform": "pc",
+      "size": 24.0,
+      "style": "700"
+    },
+    "Global/PC/Title/Title 05 (400)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:12218"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 30.0
+      },
+      "platform": "pc",
+      "size": 22.0,
+      "style": "400"
+    },
+    "Global/PC/Title/Title 05 (700)": {
+      "$type": "typography",
+      "family": "SamsungOne",
+      "figma_nodes": [
+        "1:4353"
+      ],
+      "letterSpacing": {
+        "units": "PERCENT",
+        "value": 0.0
+      },
+      "lineHeight": {
+        "units": "PIXELS",
+        "value": 30.0
+      },
+      "platform": "pc",
+      "size": 22.0,
+      "style": "700"
+    }
+  }
+}
