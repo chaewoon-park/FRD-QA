@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Rubicon 3.0 FRD v1.4.8 (0720)",
+    "date": "2026-07-23",
+    "tool": "frd-ux-qa (master-rules 44규칙)",
+    "baseline": "design-system v1.6 카탈로그 + design-tokens v1.6",
+    "input": "PDF 79p (주 경로) + .fig (보조 — 신형 스키마로 디코딩 실패)",
+    "scope": "결정적 검사 79p 전수 (색상·폰트·그림자·TBD·버전·앵커) / 정밀 판정 D섹션 p29 + 표본 시각 검증",
+    "document_scale": "섹션 9개(A~I), 고유 앵커 231개, 스펙 페이지 46p"
+  },
+  "top_risks": [
+    "깨진 상호참조 2건 — H섹션이 존재하지 않는 F43.x / F10.2를 참조 (구현 시 스펙 추적 불가)",
+    "그림자 스펙 자기모순 — 같은 CTA 그림자가 p24에선 72%(토큰 일치), p29/30/34/72에선 75%",
+    "흰 글자 + Skyblue CTA 대비 3.45:1 — 디자인 시스템 차원 문제가 실제 제품 FRD에서 재발"
+  ],
+  "issues": [
+    {"no": 1, "target": "H섹션 p63·66-68", "rule": "CN-04", "group": "정합성", "severity": "Major", "confidence": "violation",
+     "problem": "F43.1/F43.2를 4개 페이지에서 참조하나 F섹션(p38-46) 어디에도 정의 없음",
+     "evidence": "전수 앵커 색인", "fix": "F43.x 정의 추가 또는 참조 ID 정정"},
+    {"no": 2, "target": "H섹션 p63", "rule": "CN-04", "group": "정합성", "severity": "Major", "confidence": "violation",
+     "problem": "F10.2 참조 — F섹션 정의는 F10.0뿐 (F10.1도 결번)",
+     "evidence": "전수 앵커 색인", "fix": "정의 추가 또는 참조 ID 정정"},
+    {"no": 3, "target": "D2.0 p29 (+동형 CTA p30/34/72)", "rule": "AC-01", "group": "접근성", "severity": "Major", "confidence": "violation",
+     "problem": "'Confirm the use of AI' CTA: #FFFFFF on #2189FF = 3.45:1 < 4.5:1 (14pt 소형 텍스트)",
+     "evidence": "WCAG 2.2 1.4.3", "fix": "텍스트 크기/두께 상향(18pt↑) 또는 어두운 파랑. ※승인 토큰 조합 자체의 문제 — 개선 후보 #4"},
+    {"no": 4, "target": "Button Shadow 전반", "rule": "DS-04", "group": "디자인시스템", "severity": "Major", "confidence": "violation",
+     "problem": "동일 그림자를 p24는 Opacity 72%(토큰 일치), p29/30/34/72는 75%로 명세 — 문서 내 자기모순",
+     "evidence": "design-tokens Button Shadow(72%)", "fix": "4개 페이지를 72%로 통일"},
+    {"no": 5, "target": "p24·26·27·75", "rule": "DS-04", "group": "디자인시스템", "severity": "Major", "confidence": "violation",
+     "problem": "X0 Y4 Blur4 Spread0 20% 그림자 — 토큰에 없는 변형 (Shadow 01=Y1 Blur3, Shadow 02=Y4 Blur10 Spread-2)",
+     "evidence": "design-tokens effects", "fix": "Shadow 01/02 중 택일 또는 신규 토큰 등록"},
+    {"no": 6, "target": "p12·13·14·45·66-68", "rule": "DS-01", "group": "디자인시스템", "severity": "Major", "confidence": "violation",
+     "problem": "비승인 색 6종: #387AFF·#3DCC87(p13-14), #DDE8FC(p12), #8C8C8C(p45), #363636(p66-68), #FFAA4E(p68)",
+     "evidence": "design-tokens colors(43종)", "fix": "AI 제품 확장 팔레트라면 토큰 등록 절차 진행, 아니면 승인 색으로 교체"},
+    {"no": 7, "target": "D2.0/D4.0 p29 (패턴: 문서 전반)", "rule": "ST-01", "group": "상태", "severity": "Major", "confidence": "violation",
+     "problem": "CTA에 hover/pressed/disabled 상태 미명세",
+     "evidence": "DesignSystem p.100-110", "fix": "상태별 스펙 행 추가"},
+    {"no": 8, "target": "D1.0 문안 p29", "rule": "제안(Writing)", "group": "문안", "severity": "Major", "confidence": "violation",
+     "problem": "본문 \"…to begin to begin a conversation…\" 중복 오타 — 목업 PC/Mobile + 스펙 모두 동일",
+     "evidence": "Writing Principle p.30-32 (clarity) — 규칙표 밖, 제안 표시", "fix": "\"to begin a conversation\"으로 수정"},
+    {"no": 9, "target": "텍스트 요소 전반", "rule": "CB-01", "group": "경계값", "severity": "Major", "confidence": "insufficient_spec",
+     "problem": "Max chars 명세가 46개 스펙 페이지 중 12p에만 존재 — Text 요소 다수 길이·말줄임 정책 부재",
+     "evidence": "콘텐츠 설계 규약", "fix": "Text 타입 전 요소에 길이 정책 추가"},
+    {"no": 10, "target": "앵커 체계", "rule": "CN-04", "group": "정합성", "severity": "Minor", "confidence": "insufficient_spec",
+     "problem": "결번: B5.0, H4.0~H6.0, C20.1, F10.1, F43.0 — 삭제 이력인지 채번 실수인지 확인 불가",
+     "evidence": "전수 앵커 색인", "fix": "Document History에 삭제 이력 명시 또는 재채번"},
+    {"no": 11, "target": "전달물 관리", "rule": "CN-03", "group": "정합성", "severity": "Minor", "confidence": "violation",
+     "problem": ".fig 내부 파일명 Ver.1.4.5_0713 ↔ 전달 파일명/PDF 1.4.8_0720 (export는 07-20)",
+     "evidence": ".fig meta.json", "fix": "Figma 파일명을 버전과 동기화"},
+    {"no": 12, "target": "p45 (#8C8C8C)", "rule": "AC-01", "group": "접근성", "severity": "Minor", "confidence": "insufficient_spec",
+     "problem": "흰 배경 가정 시 3.36:1 미달 — 배경색 명세 미확인으로 판정 보류",
+     "evidence": "WCAG 2.2 1.4.3", "fix": "배경 명세 보강 후 재판정"},
+    {"no": 13, "target": "D2.0/D4.0 p29", "rule": "AC-03", "group": "접근성", "severity": "Info", "confidence": "violation",
+     "problem": "터치 타깃 h.40px — WCAG 최소 24px 통과, 권장 44px 미달",
+     "evidence": "WCAG 2.2 2.5.8", "fix": "참고: 44px 상향 검토"}
+  ],
+  "observations": [
+    "정합성(CN)이 최대 리스크 그룹: 231개 앵커 체계는 전반적으로 잘 관리되나 섹션 간 상호참조(F↔H)에서 깨진 링크 2건",
+    "디자인 시스템 정합: 폰트 전수 통과(비승인 스케일 0건 — 모범적). 색상은 승인 13종+비승인 6종 혼재. 그림자 4변형 중 2개만 토큰 일치",
+    "상태 완결성: p29 표본 기준 CTA 상태 정의 부재 — C섹션 공통 정의 존재 여부 확인 필요",
+    "인터랙션: TBD 0건 — 모든 액션에 목적지 존재(모범적)",
+    "시각 검증(p29): 앵커 위치·목업↔스펙 값 일치 양호",
+    "접근성: 대비 위반이 반복 패턴 — 디자인 시스템 토큰 차원의 해결 필요"
+  ],
+  "limitations": [
+    ".fig 교차검증 불가: 신형 kiwi 스키마(미지 필드 57)로 디코더 실패 — 비승인 색이 named style인지 raw 값인지 미확인. v1.7 수령 시 재발 리스크",
+    "정밀 판정 커버리지: 요소 단위 정밀 검사는 D섹션 4개 요소만 — 나머지 227개 앵커는 결정적 전수 스캔만 적용",
+    "짝없음 후보 다수(C7.1, C11.0 등)는 상호참조 관행과의 구분에 페이지별 시각 확인 필요",
+    "접근성 구현 품질(포커스·스크린리더)은 명세 검사 범위 밖"
+  ],
+  "proposals": [
+    "[신규] WR-01 문안 품질: 중복 단어·오타 검출 (이슈 #8이 규칙표 밖에서 발견됨)",
+    "[신규] CN-06 상호참조 유효성/결번 검출: 이번 최대 성과(이슈 #1·2·10)의 정식 규칙화",
+    "[보강] DS-01 확장 팔레트 절차: 제품별 신규 색상의 토큰 등록 프로세스",
+    "[에스컬레이션] AC-01×DS-01 충돌: White on Skyblue 3.45:1 — 디자인 시스템 토큰 차원의 결정 필요",
+    "[인프라] .fig 신형 스키마 대응: kiwi 디코더 보강 또는 Figma REST API 병행"
+  ]
+}

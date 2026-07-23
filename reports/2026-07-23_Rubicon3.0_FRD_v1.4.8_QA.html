@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>UX/UI QA 리포트 — Rubicon 3.0 FRD v1.4.8 (0720)</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:'Samsung One','Malgun Gothic','Segoe UI',sans-serif;margin:0;background:#F7F7F7;color:#1c1c1c}
+.wrap{max-width:1280px;margin:0 auto;padding:32px 24px 64px}
+header{background:#000;color:#fff;padding:28px 24px;border-radius:12px;margin-bottom:24px}
+header h1{margin:0 0 6px;font-size:26px}
+header .meta{color:#bbb;font-size:13px;line-height:1.7}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.card{flex:1;min-width:130px;background:#fff;border-radius:10px;padding:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card .n{font-size:30px;font-weight:700}
+.card .l{font-size:12px;color:#767676;margin-top:2px}
+.risk{background:#FFF3E0;border-left:4px solid #EF6C00;border-radius:8px;padding:14px 18px;margin:16px 0}
+.risk h3{margin:0 0 8px;font-size:15px}
+.risk ol{margin:0;padding-left:20px;font-size:14px;line-height:1.8}
+.filters{margin:20px 0 10px;display:flex;gap:8px;flex-wrap:wrap}
+.filters button{border:1px solid #ddd;background:#fff;border-radius:20px;padding:6px 14px;font-size:13px;cursor:pointer}
+.filters button.on{background:#000;color:#fff;border-color:#000}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08);font-size:13.5px}
+th{background:#1c1c1c;color:#fff;padding:10px 12px;text-align:left;font-weight:600;white-space:nowrap}
+td{padding:12px;border-top:1px solid #eee;vertical-align:top;line-height:1.6}
+tr:hover td{background:#FAFCFF}
+.badge{display:inline-block;padding:2px 10px;border-radius:12px;color:#fff;font-size:12px;font-weight:700;white-space:nowrap}
+.chip{display:inline-block;padding:2px 8px;border-radius:4px;background:#EEE;color:#555;font-size:11.5px;white-space:nowrap}
+.rule{font-family:Consolas,monospace;font-size:12.5px;background:#F0F4FF;color:#1a4fba;padding:2px 6px;border-radius:4px;white-space:nowrap}
+section{background:#fff;border-radius:10px;padding:20px 24px;margin:18px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+section h2{font-size:17px;margin:0 0 12px;border-bottom:2px solid #000;padding-bottom:8px}
+section ul{margin:0;padding-left:20px;font-size:14px;line-height:1.9}
+.feedback{background:#F0F7FF;border:1px dashed #2189FF}
+.feedback label{display:block;margin:10px 0 4px;font-size:13.5px;font-weight:600}
+.feedback textarea{width:100%;min-height:44px;border:1px solid #cdd;border-radius:6px;padding:8px;font:inherit;font-size:13px}
+footer{color:#999;font-size:12px;text-align:center;margin-top:28px}
+@media print{.filters,.feedback textarea{display:none}body{background:#fff}section,table{box-shadow:none}}
+</style><script>
+function filt(kind, val, btn){
+  document.querySelectorAll('.filters[data-kind='+kind+'] button').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  window.__f = window.__f || {sev:'all', conf:'all'};
+  window.__f[kind==='sev'?'sev':'conf'] = val;
+  document.querySelectorAll('#issues tbody tr').forEach(tr=>{
+    const okS = window.__f.sev==='all' || tr.dataset.sev===window.__f.sev;
+    const okC = window.__f.conf==='all' || tr.dataset.conf===window.__f.conf;
+    tr.style.display = (okS&&okC)?'':'none';
+  });
+}
+</script></head>
+<body><div class="wrap">
+<header>
+  <h1>UX/UI QA 리포트 — Rubicon 3.0 FRD v1.4.8 (0720)</h1>
+  <div class="meta">
+    검사일 2026-07-23 · frd-ux-qa (master-rules 44규칙)<br>
+    기준: design-system v1.6 카탈로그 + design-tokens v1.6<br>
+    입력: PDF 79p (주 경로) + .fig (보조 — 신형 스키마로 디코딩 실패)<br>
+    범위: 결정적 검사 79p 전수 (색상·폰트·그림자·TBD·버전·앵커) / 정밀 판정 D섹션 p29 + 표본 시각 검증 · 규모: 섹션 9개(A~I), 고유 앵커 231개, 스펙 페이지 46p
+  </div>
+</header>
+
+<div class="cards"><div class='card'><div class='n' style='color:#D32F2F'>0</div><div class='l'>Blocker</div></div><div class='card'><div class='n' style='color:#EF6C00'>9</div><div class='l'>Major</div></div><div class='card'><div class='n' style='color:#F9A825'>3</div><div class='l'>Minor</div></div><div class='card'><div class='n' style='color:#607D8B'>1</div><div class='l'>Info</div></div>
+  <div class="card"><div class="n">13</div><div class="l">전체 이슈</div></div>
+</div>
+<div style="font-size:13px;color:#767676">신뢰도: 확인 10 · 명세부족 3</div>
+
+<div class="risk"><h3>⚠ 최상위 리스크</h3><ol><li>깨진 상호참조 2건 — H섹션이 존재하지 않는 F43.x / F10.2를 참조 (구현 시 스펙 추적 불가)</li><li>그림자 스펙 자기모순 — 같은 CTA 그림자가 p24에선 72%(토큰 일치), p29/30/34/72에선 75%</li><li>흰 글자 + Skyblue CTA 대비 3.45:1 — 디자인 시스템 차원 문제가 실제 제품 FRD에서 재발</li></ol></div>
+
+<div class="filters" data-kind="sev">심각도&nbsp; <button class='on' onclick="filt('sev','all',this)">전체</button><button onclick="filt('sev','Major',this)">Major (9)</button><button onclick="filt('sev','Minor',this)">Minor (3)</button><button onclick="filt('sev','Info',this)">Info (1)</button></div>
+<div class="filters" data-kind="conf">신뢰도&nbsp; <button class='on' onclick="filt('conf','all',this)">전체</button><button onclick="filt('conf','violation',this)">확인 (10)</button><button onclick="filt('conf','insufficient_spec',this)">명세부족 (3)</button></div>
+<table id="issues">
+<thead><tr><th>#</th><th>대상</th><th>규칙</th><th>심각도</th><th>신뢰도</th><th>문제</th><th>근거</th><th>수정안</th></tr></thead>
+<tbody><tr data-sev='Major' data-conf='violation'><td>1</td><td>H섹션 p63·66-68</td><td><span class='rule'>CN-04</span><br><span class='chip'>정합성</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>F43.1/F43.2를 4개 페이지에서 참조하나 F섹션(p38-46) 어디에도 정의 없음</td><td>전수 앵커 색인</td><td>F43.x 정의 추가 또는 참조 ID 정정</td></tr><tr data-sev='Major' data-conf='violation'><td>2</td><td>H섹션 p63</td><td><span class='rule'>CN-04</span><br><span class='chip'>정합성</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>F10.2 참조 — F섹션 정의는 F10.0뿐 (F10.1도 결번)</td><td>전수 앵커 색인</td><td>정의 추가 또는 참조 ID 정정</td></tr><tr data-sev='Major' data-conf='violation'><td>3</td><td>D2.0 p29 (+동형 CTA p30/34/72)</td><td><span class='rule'>AC-01</span><br><span class='chip'>접근성</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>'Confirm the use of AI' CTA: #FFFFFF on #2189FF = 3.45:1 &lt; 4.5:1 (14pt 소형 텍스트)</td><td>WCAG 2.2 1.4.3</td><td>텍스트 크기/두께 상향(18pt↑) 또는 어두운 파랑. ※승인 토큰 조합 자체의 문제 — 개선 후보 #4</td></tr><tr data-sev='Major' data-conf='violation'><td>4</td><td>Button Shadow 전반</td><td><span class='rule'>DS-04</span><br><span class='chip'>디자인시스템</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>동일 그림자를 p24는 Opacity 72%(토큰 일치), p29/30/34/72는 75%로 명세 — 문서 내 자기모순</td><td>design-tokens Button Shadow(72%)</td><td>4개 페이지를 72%로 통일</td></tr><tr data-sev='Major' data-conf='violation'><td>5</td><td>p24·26·27·75</td><td><span class='rule'>DS-04</span><br><span class='chip'>디자인시스템</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>X0 Y4 Blur4 Spread0 20% 그림자 — 토큰에 없는 변형 (Shadow 01=Y1 Blur3, Shadow 02=Y4 Blur10 Spread-2)</td><td>design-tokens effects</td><td>Shadow 01/02 중 택일 또는 신규 토큰 등록</td></tr><tr data-sev='Major' data-conf='violation'><td>6</td><td>p12·13·14·45·66-68</td><td><span class='rule'>DS-01</span><br><span class='chip'>디자인시스템</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>비승인 색 6종: #387AFF·#3DCC87(p13-14), #DDE8FC(p12), #8C8C8C(p45), #363636(p66-68), #FFAA4E(p68)</td><td>design-tokens colors(43종)</td><td>AI 제품 확장 팔레트라면 토큰 등록 절차 진행, 아니면 승인 색으로 교체</td></tr><tr data-sev='Major' data-conf='violation'><td>7</td><td>D2.0/D4.0 p29 (패턴: 문서 전반)</td><td><span class='rule'>ST-01</span><br><span class='chip'>상태</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>CTA에 hover/pressed/disabled 상태 미명세</td><td>DesignSystem p.100-110</td><td>상태별 스펙 행 추가</td></tr><tr data-sev='Major' data-conf='violation'><td>8</td><td>D1.0 문안 p29</td><td><span class='rule'>제안(Writing)</span><br><span class='chip'>문안</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>확인</span></td><td>본문 "…to begin to begin a conversation…" 중복 오타 — 목업 PC/Mobile + 스펙 모두 동일</td><td>Writing Principle p.30-32 (clarity) — 규칙표 밖, 제안 표시</td><td>"to begin a conversation"으로 수정</td></tr><tr data-sev='Major' data-conf='insufficient_spec'><td>9</td><td>텍스트 요소 전반</td><td><span class='rule'>CB-01</span><br><span class='chip'>경계값</span></td><td><span class='badge' style='background:#EF6C00'>Major</span></td><td><span class='chip'>명세부족</span></td><td>Max chars 명세가 46개 스펙 페이지 중 12p에만 존재 — Text 요소 다수 길이·말줄임 정책 부재</td><td>콘텐츠 설계 규약</td><td>Text 타입 전 요소에 길이 정책 추가</td></tr><tr data-sev='Minor' data-conf='insufficient_spec'><td>10</td><td>앵커 체계</td><td><span class='rule'>CN-04</span><br><span class='chip'>정합성</span></td><td><span class='badge' style='background:#F9A825'>Minor</span></td><td><span class='chip'>명세부족</span></td><td>결번: B5.0, H4.0~H6.0, C20.1, F10.1, F43.0 — 삭제 이력인지 채번 실수인지 확인 불가</td><td>전수 앵커 색인</td><td>Document History에 삭제 이력 명시 또는 재채번</td></tr><tr data-sev='Minor' data-conf='violation'><td>11</td><td>전달물 관리</td><td><span class='rule'>CN-03</span><br><span class='chip'>정합성</span></td><td><span class='badge' style='background:#F9A825'>Minor</span></td><td><span class='chip'>확인</span></td><td>.fig 내부 파일명 Ver.1.4.5_0713 ↔ 전달 파일명/PDF 1.4.8_0720 (export는 07-20)</td><td>.fig meta.json</td><td>Figma 파일명을 버전과 동기화</td></tr><tr data-sev='Minor' data-conf='insufficient_spec'><td>12</td><td>p45 (#8C8C8C)</td><td><span class='rule'>AC-01</span><br><span class='chip'>접근성</span></td><td><span class='badge' style='background:#F9A825'>Minor</span></td><td><span class='chip'>명세부족</span></td><td>흰 배경 가정 시 3.36:1 미달 — 배경색 명세 미확인으로 판정 보류</td><td>WCAG 2.2 1.4.3</td><td>배경 명세 보강 후 재판정</td></tr><tr data-sev='Info' data-conf='violation'><td>13</td><td>D2.0/D4.0 p29</td><td><span class='rule'>AC-03</span><br><span class='chip'>접근성</span></td><td><span class='badge' style='background:#607D8B'>Info</span></td><td><span class='chip'>확인</span></td><td>터치 타깃 h.40px — WCAG 최소 24px 통과, 권장 44px 미달</td><td>WCAG 2.2 2.5.8</td><td>참고: 44px 상향 검토</td></tr></tbody>
+</table>
+
+<section><h2>그룹별 관찰</h2><ul><li>정합성(CN)이 최대 리스크 그룹: 231개 앵커 체계는 전반적으로 잘 관리되나 섹션 간 상호참조(F↔H)에서 깨진 링크 2건</li><li>디자인 시스템 정합: 폰트 전수 통과(비승인 스케일 0건 — 모범적). 색상은 승인 13종+비승인 6종 혼재. 그림자 4변형 중 2개만 토큰 일치</li><li>상태 완결성: p29 표본 기준 CTA 상태 정의 부재 — C섹션 공통 정의 존재 여부 확인 필요</li><li>인터랙션: TBD 0건 — 모든 액션에 목적지 존재(모범적)</li><li>시각 검증(p29): 앵커 위치·목업↔스펙 값 일치 양호</li><li>접근성: 대비 위반이 반복 패턴 — 디자인 시스템 토큰 차원의 해결 필요</li></ul></section>
+<section><h2>검사 한계</h2><ul><li>.fig 교차검증 불가: 신형 kiwi 스키마(미지 필드 57)로 디코더 실패 — 비승인 색이 named style인지 raw 값인지 미확인. v1.7 수령 시 재발 리스크</li><li>정밀 판정 커버리지: 요소 단위 정밀 검사는 D섹션 4개 요소만 — 나머지 227개 앵커는 결정적 전수 스캔만 적용</li><li>짝없음 후보 다수(C7.1, C11.0 등)는 상호참조 관행과의 구분에 페이지별 시각 확인 필요</li><li>접근성 구현 품질(포커스·스크린리더)은 명세 검사 범위 밖</li></ul></section>
+<section><h2>규칙 개선 후보 (순환 2 입력)</h2><ul><li>[신규] WR-01 문안 품질: 중복 단어·오타 검출 (이슈 #8이 규칙표 밖에서 발견됨)</li><li>[신규] CN-06 상호참조 유효성/결번 검출: 이번 최대 성과(이슈 #1·2·10)의 정식 규칙화</li><li>[보강] DS-01 확장 팔레트 절차: 제품별 신규 색상의 토큰 등록 프로세스</li><li>[에스컬레이션] AC-01×DS-01 충돌: White on Skyblue 3.45:1 — 디자인 시스템 토큰 차원의 결정 필요</li><li>[인프라] .fig 신형 스키마 대응: kiwi 디코더 보강 또는 Figma REST API 병행</li></ul></section>
+<section class="feedback"><h2>피드백 수집 (검토자 작성란)</h2><label>잘못 지적된 이슈(오탐) — 이슈 번호와 이유</label><textarea placeholder='작성 후 인쇄/저장하거나 내용을 회신해 주세요'></textarea><label>놓친 문제(미탐) — 무엇을, 어느 요소에서</label><textarea placeholder='작성 후 인쇄/저장하거나 내용을 회신해 주세요'></textarea><label>심각도가 부적절한 이슈 — 번호와 제안 등급</label><textarea placeholder='작성 후 인쇄/저장하거나 내용을 회신해 주세요'></textarea><label>규칙 자체 수정 제안 — 규칙 ID와 방향</label><textarea placeholder='작성 후 인쇄/저장하거나 내용을 회신해 주세요'></textarea><label>기타 코멘트</label><textarea placeholder='작성 후 인쇄/저장하거나 내용을 회신해 주세요'></textarea></section>
+
+<footer>FRD-QA · 이 리포트는 도구가 생성했으며 모든 판정에 규칙 ID와 근거가 있습니다 · 피드백은 다음 검사 개선의 입력이 됩니다</footer>
+</div></body></html>
