@@ -1,0 +1,902 @@
+{
+ "meta": {
+  "date": "2026-07-23",
+  "n_pages": 79,
+  "n_elements": 144,
+  "n_checked": 121
+ },
+ "mismatch": [
+  {
+   "page": 12,
+   "id": "B1.0",
+   "global_name": "Color Property",
+   "desc": "- - -Background Color: #DDE8FC",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#DDE8FC",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Grayscale/1_EE #EEEEEE)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 13,
+   "id": "B3.0",
+   "global_name": "AI Entry Point Container",
+   "desc": "Container Page Load Visual Properties Supports two themes depending on the underlying hero image; Dark theme for dark backgrounds, Light theme for light backgrounds. Border: 2px (Inside), Linear Gradient (#3DCC87 → #387AFF) Corner Radius: 16px Background Fill: Dark Theme: #000000, Opacity 10% Light Theme: #FFFFFF, Opacity 10% UX Policy Serves as a untypable entry point to trigger the AI Chat Side Panel for search queries. Dimensions w.152 x h.32 px Positioning Positioned leftmost within the right-aligned GNB utility group, maintaining a 20px gap from the Cart icon. Interaction (",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#3DCC87",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Secondary color/Teal #00838F)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    },
+    {
+     "kind": "색상",
+     "frd": "#387AFF",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Primary color/Skyblue #2189FF)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 14,
+   "id": "B4.0",
+   "global_name": "AI Entry Point Container AI Entry Point Icon Placeholder Text Tooltip",
+   "desc": "Container Icon Text Tooltip Page Load Page Load Page Load Page Load Visual Properties Supports two themes depending on the underlying hero image brightness; Dark theme for dark backgrounds, Light theme for light backgrounds. Border: 2px (Inside), Linear Gradient (#3DCC87 → #387AFF) Corner Radius: 16px Background Fill: Dark Theme: #000000, Opacity 10% Light Theme: #FFFFFF, Opacity 10% UX Policy Serves as a untypable entry point to trigger the AI Chat modal for search queries. Dimensions w.52 x h.32 px Positioning Positioned leftmost within the right-aligned GNB utility group, maintaining a 16px gap from the Cart icon. Interaction Tap: Triggers the AI Chat Modal to slide up from the bottom. If the AI Chat modal is already open, tapping this container shifts the system focus to the text input field within the modal. Icon w.16 x h.16 px Format: GIF Color (Primary Stroke): Dark Theme: #FFFFFF Light Theme: #000000 Font Size: Samsung One 700, 12pt Alignement: Left-aligned Color: Dark Theme: #FFFFFF, Drop shadow (X: 0, Y: 0, Blur: 3, Spread: 0, Color: #000000/ 72% Opacity) Light Theme: #000000 Placeholder Text Copy: AI Truncates with an ellipsis (...) if it exceeds the available width of the text field. Display Logic Tooltip is displayed when the chat screen is first minimized within a single session. This \"One-UI\" styled tooltip indicates that the ongoing chat session remains active. (Refer to Fig. 1). Automatically disappears after 3 seconds. Tapping the AI Chat entry hides the tooltip and open chat modal. Container Container Box Size: w. (flexible) x h. 24 px Container Pointer Size: w. 8 x h. 8 px FIll: #313131 Font Solid text : Samsung One 400, 12pt Gradient text : Samsung One 700, 12pt, Fill: Linear Gradient - 0%: #3DCC87 - 100%: #387AFF Center-aligned",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#3DCC87",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Secondary color/Teal #00838F)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    },
+    {
+     "kind": "색상",
+     "frd": "#387AFF",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Primary color/Skyblue #2189FF)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 24,
+   "id": "C7.0",
+   "global_name": "More Menu Button",
+   "desc": "Icon Button Page Load Visual Properties Size: w.32 x h.32px Fill Color: Linear Gradient - 0%: 3DCC87 - 100%: 387AFF Icon Color: Fill #FFFFFF Format: SVG Drop Shadow: X: 0, Y: 4, Blur: 4, Spread: 0, Color: #000000 (Opacity: 20%) When clicked, the More Menu option lists are displayed. Visual Properties",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y4 Blur4 Spread0 #000000 20%",
+     "expected": "가장 가까운 토큰 Shadow 01: X0 Y1 Blur3 Spread0 #000000 20%",
+     "fix": "Shadow 01 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 24,
+   "id": "C8.0",
+   "global_name": "Search Bar Area",
+   "desc": "Container Page Load Visual Properties Radius: 16px Fill Color: #FFFFFF Stroke: 1px (Inside), Color: Linear Gradient - 0%: 3DCC87 - 100%: 387AFF Drop Shadow: X: 0, Y: 4, Blur: 4, Spread: 0, Color: #000000 (Opacity: 20%) Layout: Text is left-aligned, and the Send/Stop button (C7.2) is right-aligned. Container Size Width: Dynamically adapts to the panel's width. Default: 288px (panel at 360px) / Max: 528px (panel at 600px). Height: Starts at 32px (1 line). The container dynamically expands upward to accommodate automatic word-wrap. Max Height: Capped at 164px. If the content exceeds this limit, internal vertical scrolling is activated within this container.",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y4 Blur4 Spread0 #000000 20%",
+     "expected": "가장 가까운 토큰 Shadow 01: X0 Y1 Blur3 Spread0 #000000 20%",
+     "fix": "Shadow 01 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 26,
+   "id": "C12.0",
+   "global_name": "Gradient Overlay More Menu Button",
+   "desc": "Gradient Page Load Visual Properties Size: w. 100% of Modal width x h. 40px Style: Linear Gradient (Top to Bottom) 0%: #FFFFFF (Opacity 0%), 100%: #FFFFFF (Opacity 100%) Anchored immediately above the search bar area. Icon Button Page Load Visual Properties Size: w.32 x h.32px Fill Color:2189FF Icon Color: #FFFFFF Format: SVG Drop Shadow: X: 0, Y: 4, Blur: 4, Spread: 0, Color: #000000 (Opacity: 20%)",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y4 Blur4 Spread0 #000000 20%",
+     "expected": "가장 가까운 토큰 Shadow 01: X0 Y1 Blur3 Spread0 #000000 20%",
+     "fix": "Shadow 01 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 26,
+   "id": "C14.0",
+   "global_name": "Detail Search Bar Area",
+   "desc": "When tapped, the More Menu option lists are displayed. Container Page Load Visual Properties Radius: 16px Fill Color: #FFFFFF Stroke: 1px (Inside), Color: #2189FF Drop Shadow: X: 0, Y: 4, Blur: 4, Spread: 0, Color: #000000 (Opacity: 20%) Layout: Text is left-aligned, and the Send/Stop button (C14.2) is right-aligned. Container Size Width: Dynamically expands to fill the space between the left more menu icon (including its gap) and the right modal margin. Height: Starts at 32px (1 line). The container dynamically expands upward to accommodate automatic word-wrap. Max Height: Capped at 164px. If the content exceeds this limit, internal vertical scrolling is activated within this container. (Fig.1) Autor",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y4 Blur4 Spread0 #000000 20%",
+     "expected": "가장 가까운 토큰 Shadow 01: X0 Y1 Blur3 Spread0 #000000 20%",
+     "fix": "Shadow 01 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 27,
+   "id": "C20.0",
+   "global_name": "Gradient Overlay More Menu Button",
+   "desc": "Gradient Page Load Visual Properties Size: w. 100% of Modal width x h. 40px Style: Linear Gradient (Top to Bottom) 0%: #FFFFFF (Opacity 0%), 100%: #FFFFFF (Opacity 100%) Anchored immediately above the search bar area. Icon Button Page Load Visual Properties Size: w.32 x h.32px Fill Color:2189FF Icon Color: #FFFFFF Format: SVG Drop Shadow: X: 0, Y: 4, Blur: 4, Spread: 0, Color: #000000 (Opacity: 20%) When tapped, the More Menu option lists are displayed. Visual Properties",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y4 Blur4 Spread0 #000000 20%",
+     "expected": "가장 가까운 토큰 Shadow 01: X0 Y1 Blur3 Spread0 #000000 20%",
+     "fix": "Shadow 01 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 27,
+   "id": "C21.0",
+   "global_name": "Search Bar Area",
+   "desc": "Container Page Load sua ope t es Radius: 16px Fill Color: #FFFFFF Stroke: 1px (Inside), Color: #2189FF Drop Shadow: X: 0, Y: 4, Blur: 4, Spread: 0, Color: #000000 (Opacity: 20%) Layout: Text is left-aligned, and the Send/Stop button (C20.2) is right-aligned. Container Size Width: Dynamically expands to fill the space between the left more menu icon (including its gap) and the right modal margin. Height: Starts at 32px (1 line). The container dynamically expands upward to accommodate automatic word-wrap. Max Height: Capped at 164px. If the content exceeds this limit, internal vertical scrolling is activated within this container. (Fig.1)",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y4 Blur4 Spread0 #000000 20%",
+     "expected": "가장 가까운 토큰 Shadow 01: X0 Y1 Blur3 Spread0 #000000 20%",
+     "fix": "Shadow 01 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 29,
+   "id": "D2.0",
+   "global_name": "‘Confirm the use of AI’ CTA Connect to a Live",
+   "desc": "Interaction Click/Tap Filled CTA PC/MO: w. (flexible) x h. 40 px (max width ~328 px) Left Aligned Color: #2189FF Font PC/MO: Samsung One 700, 14 pt Center-Aligned Color : #FFFFFF Drop Shadow: X: 0, Y: 0, Blur: 3, Spread: 0, Color: #000000 (Opacity: 75%) Max 30 characters, up to 1 line Font PC/MO: Samsung One 400, 16pt / Bold Font: Samsung One 700 16pt",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y0 Blur3 Spread0 #000000 75%",
+     "expected": "가장 가까운 토큰 Button Shadow: X0 Y0 Blur3 Spread0 #000000 72%",
+     "fix": "Button Shadow 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 30,
+   "id": "D5.0",
+   "global_name": "Main Text for a fall- back situation (Disconnection from the Server) ‘Restart the Chat’ CTA",
+   "desc": "Text Interaction Page Load Click/Tap Font PC/MO: Samsung One 400, 16pt Left Aligned Color : #000000 When is click/tapped, the screen refreshes and the landing page displays. Filled CTA PC/MO: w. (flexible) x h. 40 px (max width ~328 px) Left Aligned Color: #2189FF Font PC/MO: Samsung One 700, 14 pt Center-Aligned Color : #FFFFFF Drop Shadow: X: 0, Y: 0, Blur: 3, Spread: 0, Color: #000000 (Opacity: 75%) Max 30 characters, up to 1 line",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y0 Blur3 Spread0 #000000 75%",
+     "expected": "가장 가까운 토큰 Button Shadow: X0 Y0 Blur3 Spread0 #000000 72%",
+     "fix": "Button Shadow 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 34,
+   "id": "D13.3",
+   "global_name": "Non Logged-In Users Modal Popup Close icon Non Logged-In Users Modal Popup Sign In/Sign-Up CTA",
+   "desc": "Icon Button Click/Tap Click/Tap Clicking/ tapping the icon closes the modal popup. Icon PC/MO : w. 19px x h. 19px, #000000 Format: SVG Right-aligned Clicking/ tapping the CTA redirects to Samsung Account Page for sign in/sign up. Filled CTA PC/MO: w. (flexible) x h. 40 px Left Aligned Color: #2189FF Font PC/MO: Samsung One 700, 14pt, #FFFFFF Drop Shadow: X: 0, Y: 0, Blur: 3, Spread: 0, Color: #000000 (Opacity: 75%) Center-aligned Max 30 characters, up to 1 line",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y0 Blur3 Spread0 #000000 75%",
+     "expected": "가장 가까운 토큰 Button Shadow: X0 Y0 Blur3 Spread0 #000000 72%",
+     "fix": "Button Shadow 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 45,
+   "id": "F15.4",
+   "global_name": "Font Size Slider",
+   "desc": "Container Page Load Container specification PC/MO : w. 280 x h. 50 px Component Specification F15.4.1: Font (Samsung One 700, 12pt, #000000) F15.4.2: Line Weight (Horizontal Line: 2px, Vertical Line: 1px), Color (#8C8C8C) F15.4.3: Draggable Slide Controller. Circle (w. 24 x h. 24 px), Color (#FFFFFF), Shadow (#000000 56% / X : 0 / Y : 4 / Blur : 10 / Spread : -2) F15.4.4: Font (Samsung One 700, 20pt, #000000)",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#8C8C8C",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Grayscale/5_8F #8F8F8F)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 66,
+   "id": "H14.0",
+   "global_name": "Thumbs Up/Down Feedback Feedback Container Description",
+   "desc": "Feedback Container Text Page Load Page Load ad us: 0p Color Container background color : #363636, Opacity: 80% Font (F43.2) Left-aligned Font PC/MO : Samsung One 400, 12pt, #000000 Left aligned",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#363636",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Grayscale/8_31 #313131)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 67,
+   "id": "H14.0",
+   "global_name": "Additional Comments Headline Thumbs Up/Down Feedback Additional Comments Input Field Cancel CTA Submit CTA",
+   "desc": "Text Conditional Feedback Container Container Page Load Conditional CTA CTA Click/Tap Click/Tap When click/tapped, the feedback container area disappears. Outlined CTA PC/MO: w. 160 x h. 40 px Radius : 20px Left-Aligned Color: Outline #000000, 1px Font PC/MO: Samsung One 700, 14 pt Center-Aligned Color : #000000 After clicking on ‘H13.8 Submit CTA’, ‘H11.0 feedback container’ appears. Filled CTA PC/MO: w. 160 x h. 40 px Radius : 20px Right-Aligned Color: Fill #000000 Font PC/MO: Samsung One 700, 14 pt Center-Aligned Color : #FFFFFF * After clicking on thumbs up/down buttons, this feedback container appears right away and disappears within 2 seconds. Container Size Default w.101px x h.57px Radius: 20px Color Container background color : #363636, Opacity: 80% Font (F43.2) -PC/MO : Samsung One 700, 12pt, #FFFFFF -Center aligned Icon (F43.1) -Type: SVG Font PC/MO : Samsung One 400, 12pt, #000000 Left-aligned W hen select the input box, the focus status is displayed with a blue border. (Fig. 1) When typing in the container, it changes from default to active state. Container Size: w. 328 x h. 80 px Radius: 8px Inactive (Default State) --> Fill Color: #FFFFFF Stroke: 1px (Inside), #555555 Active (On typing) --> Fill Color: #FFFFFF Stroke: 2px (Inside), #2189FF If the content exceeds limit, vertical scroll bar is activated within the container. (Fig. 2) Font Inactive (Default State) --> PC: Samsung One 400, 14pt, #555555 Active (On typing) --> PC: Samsung One 400, 14pt, #000000 Left-aligned Text automatically wraps to the next line when it reaches the flexible width of the container.",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#363636",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Grayscale/8_31 #313131)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 68,
+   "id": "H14.0",
+   "global_name": "Thumbs Up/Down Feedback Survey Question Headline - Overall Satisfaction",
+   "desc": "Feedback Container Text Page Load Page Load ad us: 0p Color Container background color : #363636, Opacity: 80% Font (F43.2) -PC/MO : Samsung One 700, 12pt, #FFFFFF -Center aligned Icon (F43.1) -Type: SVG Left-aligned R equired field and marked with an asterisk (*). Font PC/MO : Samsung One 700, 14pt, #000000 Left-aligned Behavior Users can select a rating from 1 to 5 stars in 1-star increments. When the user tap/clicks to select a rating, the UI must visually display the corresponding filled star icons Ratings can be re-selected at any time before submission. An additional feedback input field(H14.12, H14.13) appears when a rating of 3 stars or lower is selected. Mandatory question Clicking ‘Submit button without answering this question displays",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#363636",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Grayscale/8_31 #313131)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 68,
+   "id": "H14.4",
+   "global_name": "Survey Star Rating Icon - Overall Satisfaction Survey Question Headline - AI Helpfulness Survey Star Rating - AI Helpfulness Survey Question Headline - Recommendation Survey Star Rating - Recommendation",
+   "desc": "Text Page Load Mandatory question. Clicking ‘Submit’ button without answering this question displays an error message. Icon & Layout PC/MO: w. 32 x h. 32 px for each Star Icon File Type: SVG Left-aligned Fill Color : (Selected) #FFAA4E (Unselected) #FFFFFF Outline: #555555, 1px Layout: The spacing between the star icons must remain fixed, regardless of the chat window’s width. Text Page Load R equired field and marked with an asterisk (*). Font PC/MO : Samsung One 700, 14pt, #000000 Left-aligned Text Page Load Behavior Users can select a rating from 1 to 5 stars in 1-star increments. When the user tap/clicks to select a rating, the UI must visually display the corresponding filled star icons Ratings can be re-selected at any time before submission. Mandatory question. Clicking ‘Submit’ button without answering this question displays an error message. Icon PC/MO: w. 32 x h. 32 px for each Star Icon File Type: SVG Left-aligned Fill Color : (Selected) #FFAA4E (Unselected) #FFFFFF Outline: #555555, 1px Even if the chat window size increases, the margin between the stars remains constant. Text Page Load R equired field and marked with an asterisk (*). Font PC/MO : Samsung One 700, 14pt, #000000 Left-aligned Text Page Load Behavior Mandatory question. Clicking ‘Submit’ button without answering this question displays an error message. Font 1. Number PC/MO : Samsung One 700, 14pt, #000000 Center-aligned When selected, an outline container(1px, #000000) appears. Even if the chat window size increases, the margin between the numbers remains constant. 2 Endpoint Label Text",
+   "findings": [
+    {
+     "kind": "색상",
+     "frd": "#FFAA4E",
+     "expected": "승인 팔레트에 없음 (가장 가까운 토큰: Secondary color/Coral light #F36E6E)",
+     "fix": "승인 토큰으로 교체 또는 신규 토큰 등록"
+    }
+   ]
+  },
+  {
+   "page": 72,
+   "id": "H15.1",
+   "global_name": "“Sign in/Sign up” CTA",
+   "desc": "Button Click/Tap Filled CTA PC/MO: w. (flexible) x h. 40 px Left Aligned Color: #2189FF Font PC/MO: Samsung One 700, 14 pt Center-Aligned Color : #FFFFFF Drop Shadow: X: 0, Y: 0, Blur: 3, Spread: 0, Color: #000000 (Opacity: 75%) Max 30 characters, up to 1 line",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y0 Blur3 Spread0 #000000 75%",
+     "expected": "가장 가까운 토큰 Button Shadow: X0 Y0 Blur3 Spread0 #000000 72%",
+     "fix": "Button Shadow 토큰 값으로 통일"
+    }
+   ]
+  },
+  {
+   "page": 75,
+   "id": "I1.0",
+   "global_name": "- Client Prompt Text Generating AI Prompt 4-stars Icon Generating Text Option Chip ‘No’ Option Chip Reaction Button Area Reaction Button Area - Like Button Reaction Button Area - Dislike Button ‘Generating’ Client Prompt Time Search Bar Search Input Field Search Send/ Stop Button",
+   "desc": "- - Case #1. CS-based result prompt towards a CS-related query After Rubycon passes the query to the CS Chatbot, Rubicon retrieves the response from it and displays the CS-result prompts on the same Rubicon screen as if it were generated from the same LLM model) Text Page Load Font PC/MO : Samsung One 700, 20pt, #000000 Left-aligned Icon Page Load Size PC/MO : w. 32 x h. 32 px Left–aligned Format : SVG Text Page Load Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned Option Chip Click/Tap When click/tapped, connect to a Live Agent Filled CTA PC/MO: w. (flexible) x h. 40 px (max width ~328 px) Left-Aligned Color: #2189FF Font PC/MO : Samsung One 700, 14pt, #FFFFFF, Center - aligned Shadow : #000000 75% / X : 0 / Y : 0 / Blur : 3 / Spread : 0 Option Chip Click/Tap Container PC/MO : w. (flexible) x h. 32px The width value is adjusted to match the length of the longest text. Fill : #FFFFFF Outline : #EEEEEE, 1px Left-aligned Font PC/MO : Samsung One 700, 12pt, #000000 Center-aligned Container Page Load The area where the ‘Like’ and ‘Dislike’ buttons are displayed. Only one icon can be clicked/tapped. Icon Button Click/Tap Icon PC/MO : w. 24 x h. 24 px, #555555 Format : SVG Left-aligned Icon Button Click/Tap Icon PC/MO : w. 24 x h. 24 px, #555555 Format : SVG Left-aligned Text Page Load Displays the time the message was delivered. Font PC/MO: Samsung One 400, 12pt, #555555 Right-aligned Use capitalize letters for AM and PM. Container Page Load Search bar is disabled during option selection. Visual Properties Radius: 16px Fill Color: #FFFFFF Stroke: 1px (Inside), Color: #2189FF (Opacity: 100%) Drop Shadow: X: 0, Y: 4, Blur: 4, Spread: 0, Color: #000000 (Opacity: 20%) Container Size Refer to C8.0 Text Field Page Load Display ‘Select the option above’ when an option selection is required. Font Inactive (Default State) --> PC: Samsung One 400, 14pt, #555555 Active (On typing) --> PC: Samsung One 400, 14pt, #000000 Left-aligned Icon Button Page Load Icon PC: w.24 x h.24px Fill Color: F5F7FE, Icon Color: 2189FF Format: SVG When clicked, a prompt is sent to Rubicon State Toggle Default State(Send Button): Clicking the button submits the prompt to Rubicon, instantly switching the icon to the Stop button. Generating State (Stop Button): Clicking the button stops the ongoing response generation, reverting the icon back to the Send button.",
+   "findings": [
+    {
+     "kind": "그림자",
+     "frd": "X0 Y4 Blur4 Spread0 #000000 20%",
+     "expected": "가장 가까운 토큰 Shadow 01: X0 Y1 Blur3 Spread0 #000000 20%",
+     "fix": "Shadow 01 토큰 값으로 통일"
+    }
+   ]
+  }
+ ],
+ "match": [
+  {
+   "page": 12,
+   "id": "B2.0",
+   "global_name": "Color Property",
+   "desc": "- - -Background Color: #FFFFFF"
+  },
+  {
+   "page": 13,
+   "id": "B3.1",
+   "global_name": "AI Entry Point Icon Placeholder Text",
+   "desc": "Icon Text Page Load Page Load Hover: The cursor changes to a pointer (hand icon). Click: Triggers the AI Chat Side Panel to slide in from the right edge. If the AI Chat Side Panel is already open, clicking this container shifts the system focus to the text input field within the open AI chat panel. Icon w.16 x h.16 px Format: GIF Color (Primary Stroke): Dark Theme: #FFFFFF Light Theme: #000000 Font Size: Samsung One 700, 12pt Alignement: Left-aligned Color: Dark Theme: #FFFFFF, Drop shadow (X: 0, Y: 0, Blur: 3, Spread: 0, Color: #000000/ 72% Opacity) Light Theme: #000000 Placeholder Text Copy: Ask or Search with AI Truncates with an ellipsis (...) if it exceeds the available width of the text field."
+  },
+  {
+   "page": 18,
+   "id": "B6.0",
+   "global_name": "AI Assistant Menu",
+   "desc": "Text Page Load Mobile: AI Assistant Menu is positioned as the 3rd of 5 menus in the Bottom Navigation Bar (BNB). Fold/Tablet: AI Assistant Menu is positioned as the 3rd of 5 menus in the Side Navigation Bar (SNB). Tapping this menu navigates the user to the AI Assistant landing page. Container Mobile: w.72 x h.58 px, #FFFFFF Fold/Tablet: w.250 X h.56 px Normal: #FFFFFF"
+  },
+  {
+   "page": 18,
+   "id": "B6.1",
+   "global_name": "AI Assistant Icon",
+   "desc": "Icon Page Load Selected: #F7F7F7 Icon w.24 x h.24 px Color: #000000 Font"
+  },
+  {
+   "page": 18,
+   "id": "B6.2",
+   "global_name": "AI Assistant Label",
+   "desc": "Text Page Load/Tap Mobile Normal: Roboto, Medium, 8pt, #555555 Selected: Roboto, Medium, 8pt, #000000 Center-aligned Max 11 characters, up to 1 line Fold/Tablet Normal: Roboto, Medium, 16pt, #555555 Selected: Roboto, Medium, 16pt, #000000 Left-aligned Up to 1 line"
+  },
+  {
+   "page": 18,
+   "id": "B6.3",
+   "global_name": "Selected Bar line",
+   "desc": "Line Tap W hen a user taps the ‘AI Assistant’ menu item, a bar line is displayed to indicate the selected state. Mobile Bar line appears at the top edge of the AI Assistant menu item. w.72 x h.2.5 px, #000000 Fold/Tablet Bar line appears at the left edge of the AI Assistant menu item. w.4x h. 56 px, #000000 (The line is 4px, but by putting the mask on, the line only shows 2px) Shape: Rounded line Display Logic"
+  },
+  {
+   "page": 18,
+   "id": "B6.4",
+   "global_name": "Tooltip",
+   "desc": "Tooltip Page Load p y g Tooltip is displayed when the chat screen is first minimized within a single session. The AI chat screen gets minimized, showing with a “One-UI” styled tooltip meaning that the chat session is still alive. This tooltip disappears within 3 seconds. For Mobile, displayed at the top center of BNB AI Assistant menu. For Fold/Tablet sizes, displayed to the right of AI Assistant menu. Container Container Box Size: w. (flexible) x h. 24 px Container Pointer Size: w. 8 x h. 8 px FIll: #313131 Font Solid text : Roboto, Medium, 12pt, #FFFFFF Gradient text : Roboto, Bold, 12pt, Fill: Linear Gradient - 0%: 3DCC87 - 100%: 387AFF Center-aligned"
+  },
+  {
+   "page": 21,
+   "id": "B7.2",
+   "global_name": "Onboarding Title Text",
+   "desc": "Text Page Load Font PC/MO : Samsung One 400, 14pt, #000000 Max 76 characters, up to 2 line, truncation enabled with “...” over 76 characters. Center alignment only Capitalize only the 1st letter of the 1st word except for preposition and articles. For text, it changes statically depending on the time situation. Morning First Line : Good morning! Second Line: Nice to have you here <Korean Ver.> First Line : 상쾌한 아침이네요! Second Line: 하루의 시작을 삼성닷컴 AI와 함께하세요. Afternoon First Line: Hope your day is going well"
+  },
+  {
+   "page": 21,
+   "id": "B7.3",
+   "global_name": "Bottom Area",
+   "desc": "Text Conditional Page Load First Line: Hope your day is going well Second Line: Ask me if you need anything <Korean Ver.> First Line : 오늘 하루도 잘 보내고 있으신가요? Second Line: 필요한 게 있으시면 언제든지 물어보세요. Night First line: Hope you had a good day Second line: Feel free to ask anytime <Korean Ver.> First Line : 오늘 하루도 잘 보내셨나요? Second Line: 필요한 게 있으시면 언제든지 물어보세요. Font PC/MO : Samsung One 700, 16pt, #000000 Center-aligned Capitalize the 1st letter of each word except for preposition and articles"
+  },
+  {
+   "page": 24,
+   "id": "C1.0",
+   "global_name": "Header Title",
+   "desc": "Text Page Load Font: Samsung One 700. 16pt. #000000, Line height: 1.38, Left-aligned (SEC) Header Title: 삼성닷컴 AI PC : w.24 x h.24px"
+  },
+  {
+   "page": 24,
+   "id": "C3.0",
+   "global_name": "Close Button Scroll Bar",
+   "desc": "'Extract'. ( ) Container Click/Tap Icon PC : w.24 x h.24px Right-aligned Format: SVG Click/Tap Interaction Collapses the panel to the right edge of the viewport. (Fig.1) Container Click/Drag Color: #8F8F8 F Size: w. 4px x h. flexible Corner Radius: 4px Handle Tab Fill Color: #2189FF Font: Samsung One 700, 10pt, #FFFFFF, Left-aligned Font & Icon Drop Shadow: X: 0, Y: 0, Blur: 3, Spread: 0, Color: #000000 (Opacity: 72%) Icon: Size: Default State w.8 x h.8px, Collapsed State w.16 x h.16px Format: SVG Color: #FFFFFF Left-aligned Vertical Indicator Size: w. 4px x h. 100% of the panel height Color: #2189FF Visual States Default State: Displays a star icon alongside the text \"AI Assistant\". Collapsed State: Transforms into a side tab with a left-facing arrow when the panel is collapsed. (Fig .1) Resize Behavior: Dragging left expands the panel width up to Viewport width minus 360px (capped at a maximum of 960px). This action is disabled if the calculated available width is less than the default chat panel width of 360px. Dragging right beyond the 360px default threshold instantly collapses the panel"
+  },
+  {
+   "page": 24,
+   "id": "C6.0",
+   "global_name": "Chatscreen Handle Gradient Overlay",
+   "desc": "Handle Click/Drag Dragging right beyond the 360px default threshold instantly collapses the panel. Drag from Collapsed: Releasing the handle under 360px snaps the panel to the Default State (360px), while releasing it beyond 360px retains the exact dropped width. Click from Collapsed: Clicking the narrow side tab instantly re-opens the chat panel to its Default State (360px). Minimize Interaction Dragging the side handle to the right edge of the viewport collapses the chat panel. Accessibility Specifications Focus Control & Handle Access Panel Open: The C5.0 Handle is excluded from keyboard and screen reader access. Apply disabled and aria-hidden=\"true\" to prevent redundant focus. Panel Closed: The C5.0 Handle becomes accessible to allow users to open the panel. Remove disabled and aria-hidden attributes. Global Tab Order Keyboard navigation must follow this logical sequence: Global GNB Area -> AI Chat Panel (or C5.0 Handle if collapsed) -> Main Content (Landing Page). No Focus Trap Since the side panel does not employ a background dimming effect (non-modal), the keyboard focus must NOT be trapped inside the panel. Once a user tabs through the last interactive element within the panel, the focus must naturally proceed to the landing page's main content, and the panel must remain open without closing against the user's intent. Reflow & Text Scaling The internal layout must utilize flexible grid/flexbox structures. If a user applies up to 200% text scaling via browser settings, the panel layout must adapt without causing text truncation, overlap, or requiring horizontal scrolling. Gradient Page Load Visual Properties Size: w. 100% of Chat Panel width (360~600px) x h. 40px Style: Linear Gradient (Top to Bottom) 0%: #FFFFFF (Opacity 0%), 100%: #FFFFFF (Opacity 100%) Anchored immediately above the search bar area. Visual Properties"
+  },
+  {
+   "page": 24,
+   "id": "C8.1",
+   "global_name": "Search Input Field",
+   "desc": "is activated within this container. Text Field Page Load Font Inactive (Default State) --> PC: Samsung One 400, 14pt, #555555 Active (On typing) --> PC: Samsung One 400, 14pt, #000000 Left-aligned Interaction & Submission Pressing the Enter key or clicking the Send Button (C7.2) submits the content. Pressing Shift + Enter inserts a line break without submitting the prompt. Input Behavior There is no maximum limit on the total number of characters entered. Text automatically wraps to the next line when it reaches the flexible width of the container."
+  },
+  {
+   "page": 24,
+   "id": "C8.3",
+   "global_name": "Search Input Field Scoll Indicator AI Usage Disclaimer",
+   "desc": "(Fig.2) Interaction Scroll Appears only when the text inside the Search Input Field (C7.1) exceeds the max-height. Size w.4px x h.(flexible)px, #8F8F8F Radius : 2px (50%) Hover w. 6px x h. (flexible)px, #000000 Radius : 3px (50%) Text Field Page Load Font PC: Samsung One 700, 12pt, #757575, Line Height: 130% View More CTA Text-based Hyperlink Underlined When clicked, the T&C popup (in case of confirming T&C) shows up Refer to “C. Landing Page-03 (logged-in users/T&C popup when clicking “View More” of an AI disclaimer at the bottom)” PC: Samsung One 700, 12pt, #000000 Line Height: 130%"
+  },
+  {
+   "page": 25,
+   "id": "C10.0",
+   "global_name": "Chatscreen Popup",
+   "desc": "Popup Page Load All internal UI and behaviors are identical to [C. Common UI _ PC Ver. ] unless noted otherwise. Visual Properties Drop Shadow: X: 0, Y: 4, Blur: 10, Spread: -2, Color: #000000 (Opacity: 20%) Corner Radius: 24px Dimensions: Initial Width: Inherits the exact width of the chat panel at the moment of extraction. Initial Height: Resets to a default height of 720px. Minimum Size: w.360px X h.720px (Fig. 4) Maximum Size: w.960px X h.900px (Fig. 5) Behavior: Users can flexibly manipulate the size of a chatscreen. Users also relocate the position of a chatscreen."
+  },
+  {
+   "page": 26,
+   "id": "C10.0",
+   "global_name": "Modal Header Container",
+   "desc": "Modal Header Area Drag Visual Properties Drop Shadow on the top edge of the modal: X: 0, Y: 4, Blur: 10, Spread: -2, Color: #000000 (Opacity: 20%) Draggable Area • The entire top header area (including drag handle, header title, and surrounding padding) acts as the draggable touch target. Drag Interaction Dragging up from Default state snaps to Full sceen. Dragging down scales down the modal following user’s drag, automatically snapping to h 80% D f l if l d b f p i g h 80% D ggi g f h d"
+  },
+  {
+   "page": 26,
+   "id": "C10.1",
+   "global_name": "Drag Handle",
+   "desc": "the 80% Default state if released before passing the 80%. Dragging further down dismisses the modal from the screen. Indicator Pill Page Load Visual Properties Size: w. 40px x h. 4px Radius: 2px Fill Color: #000000 (Opacity: 30%)"
+  },
+  {
+   "page": 26,
+   "id": "C10.2",
+   "global_name": "Header Title Control Button",
+   "desc": "Header Title Page Load Font: Samsung One 700. 16pt. #000000, Line height: 1.38, Left-aligned (SEC) Header Title: 삼성닷컴 AI Icon Button Tap Icon Size : w.24 x h.24 px Format: SVG Dynamically updates ( or ) based on the current modal state."
+  },
+  {
+   "page": 26,
+   "id": "C14.1",
+   "global_name": "Search Input Field",
+   "desc": "Text Field Page Load Font Inactive (Default State) --> PC: Samsung One 400, 14pt, #555555 Active (On typing) --> PC: Samsung One 400, 14pt, #000000 Left-aligned Input Behavior There is no maximum limit on the total number of characters entered. Text automatically wraps to the next line when it reaches the flexible width of the container. Input Behavior Automatic word-wrap is enabled. The mobile keyboard's 'Return/Enter' key is mapped to the 'Submit' action, disabling manual line breaks. The container dynamically expands upwards to accommodate up to 8 lines. If the text exceeds this limit, internal vertical scrolling is activated. Both the More Menu Button and the Send Button remain bottom-aligned as the"
+  },
+  {
+   "page": 26,
+   "id": "C14.2",
+   "global_name": "Search Send/ Stop Button Scroll Indicator AI Usage Disclaimer Detail",
+   "desc": "Both the More Menu Button and the Send Button remain bottom aligned as the container expands upwards (Fig.1). Icon Button Page Load Icon PC: w.24 x h.24px Fill Color: F5F7FE, Icon Color: 2189FF Format: SVG When tapped, a prompt is sent to Rubicon Interaction Default State(Send Button): Submits the prompt to Rubicon and switches to the Stop icon. Generating State(Stop Button): Stops response generation and reverts to the Send icon (Fig.2) Interaction Scroll Color: # 8F8F8F Size: w. 4px x h. flexible Corner Radius: 4px Text Field Page Load Font PC: Samsung One 700, 12pt, #757575, Line Height: 1.33 View More CTA Text-based Hyperlink Underlined When clicked, the T&C popup (in case of confirming T&C) shows up Refer to “C. Landing Page-03 (logged-in users/T&C popup when clicking “View More” of an AI disclaimer at the bottom)” PC: Samsung One 700, 12pt, #000000 Line Height: 1.33 Auto r"
+  },
+  {
+   "page": 27,
+   "id": "C16.0",
+   "global_name": "Shop App Native App Bar",
+   "desc": "App Bar Page Load The native App Bar remains fixed at the top while the Chat screen is displayed. Container #FFFFFF"
+  },
+  {
+   "page": 27,
+   "id": "C16.1",
+   "global_name": "Shop App Native App Bar Header",
+   "desc": "Text Page Load The logo changes into page title ‘Samsung AI Assistant’. Font Roboto Medium, 14pt, #000000 Left - alignment Capitalize 1st letter Ellipsis is applied if over 1 line"
+  },
+  {
+   "page": 27,
+   "id": "C16.2",
+   "global_name": "Cart Icon Mo. App Screen Scroll Bar",
+   "desc": "Ellipsis is applied if over 1 line Icon Page Load Icon w. 24px x h. 24px Color: #000000 Mo. App Screen Chatscreen w. 360px x h. 583px (Height is flexible depending on the height of a mobile device screen) Container Tap/Drag Color : #8F8F8F Size: w. 4px x h. flexible Corner Radius: 4px"
+  },
+  {
+   "page": 27,
+   "id": "C21.1",
+   "global_name": "Search Input Field",
+   "desc": "Text Field Page Load Font Inactive (Default State) --> MO. App: Samsung One 400, 14pt, #555555 Active (On typing) --> MO. App: Samsung One 400, 14pt, #000000 Left-aligned Input Behavior There is no maximum limit on the total number of characters entered. Text automatically wraps to the next line when it reaches the flexible width of the container. Input Behavior Automatic word-wrap is enabled. The mobile keyboard's 'Return/Enter' key is mapped to the 'Submit' action, disabling manual line breaks. The container dynamically expands upwards to accommodate up to 8 lines. If the text exceeds this limit, internal vertical scrolling is activated. Both the More Menu Button and the Send Button remain bottom-aligned as the"
+  },
+  {
+   "page": 27,
+   "id": "C21.2",
+   "global_name": "Search Send/ Stop Button Scroll Indicator",
+   "desc": "ot t e o e e u utto a d t e Se d utto e a botto a g ed as t e container expands upwards (Fig.1). Icon Button Page Load Icon PC: w.24 x h.24px Fill Color: F5F7FE, Icon Color: 2189FF Format: SVG When tapped, a prompt is sent to Rubicon Interaction Default State(Send Button): Submits the prompt to Rubicon and switches to the Stop icon. Generating State(Stop Button): Stops response generation and reverts to the Send icon (Fig.2) Interaction Scroll Color : #8F8F8F Size: w 4px x h flexible"
+  },
+  {
+   "page": 27,
+   "id": "C22.0",
+   "global_name": "Scroll Indicator AI Usage Disclaimer Shop App Native Bottom Navigation Bar",
+   "desc": "Interaction Scroll Size: w. 4px x h. flexible Corner Radius: 4px Text Field Page Load Font PC: Samsung One 700, 12pt, #757575, Line Height: 1.33 View More CTA Text-based Hyperlink Underlined When clicked, the T&C popup (in case of confirming T&C) shows up Refer to “C. Landing Page-03 (logged-in users/T&C popup when clicking “View More” of an AI disclaimer at the bottom)” PC: Samsung One 700, 12pt, #000000 Line Height: 1.33 BNB Page Load The native BNB remains fixed at the bottom while the Chat screen is displayed."
+  },
+  {
+   "page": 29,
+   "id": "D1.0",
+   "global_name": "Main Text for the case of no confirming on T&C with logged in status",
+   "desc": "Text Page Load Font PC/MO: Samsung One 400, 16pt / Bold Font: Samsung One 700 16pt Left Aligned Color : #000000 When click/tapped, the modal popup(E. T&C_Popup(default)) shows up."
+  },
+  {
+   "page": 29,
+   "id": "D4.0",
+   "global_name": "Connect to a Live Agent Text ‘Connect to a Live Agent’ CTA",
+   "desc": "Text Interaction Page Load Click/Tap PC/MO: Samsung One 400, 16pt / Bold Font: Samsung One 700 16pt Left Aligned Color : #000000 When click/tapped, connect to a Live agent. Filled CTA PC/MO: w. (flexible) x h. 40 px (max width ~328 px) Left-Aligned Color: #000000 Font PC/MO: Samsung One 700, 14 pt Center-Aligned Color : #FFFFFF Max 30 characters, up to 1 line"
+  },
+  {
+   "page": 31,
+   "id": "D7.0",
+   "global_name": "Landing Page Headliner Container Headline Welcome Text Headline Text Today’s Recommend ed Questions Container Headline Text Selection Chip CS Text Container CS Hyperlink",
+   "desc": "Container Text Text Container Text Container Text Interaction Page Load Page Load Page Load Page Load Page Load Click/Tap Page Load Click/Tap D isplays text containing the user name to the logged-in user. Font PC/MO: Samsung One 700 20pt Left Aligned Color : #000000 %s : User’s name (Fig. 1) Font PC/MO: Samsung One 400, 16pt Left Aligned Color : #000000 Today's Recommended Questions Section. 4 Selection chips are displayed by default. Font PC/MO: Samsung One 700, 14pt Left Aligned Color : #000000 Chip Specification PC/MO : w. (flexible) x h. 32 px (max width ~328 px) Left-aligned Background color : #FFFFFF Outline : Stroke 1pt, #EEEEEE Radius : 16px Font PC/MO : Samsung One 700, 12pt, #000000 Center-aligned Max 38 characters, up to 1 line (AI-generated sentence should not exceed this threshold) Font PC/MO: Samsung One 400, 12pt Left Aligned Color : #000000 Font PC/MO : Samsung One 400, 12pt Left Aligned Color : #006BEA Text-based Hyperlink Underlined Icon PC/MO : w. 16 x h. 16 px Format : SVG <Before UK ver. CS Chat is ready> - If clicked, the background webpage is redirected to a Samsung Support Page (https:// www.samsung.com/uk/support/) *If this hyperlink is clicked, the background webpage gets directed to a certain URL within a same webpage (not creating a new webpage)"
+  },
+  {
+   "page": 32,
+   "id": "D10.0",
+   "global_name": "Main Headline for a fall-back situation",
+   "desc": "Text Page Load Font PC/MO: Samsung One 700 20pt Left Aligned Color : #000000"
+  },
+  {
+   "page": 32,
+   "id": "D11.0",
+   "global_name": "Sub Headline for a fall-back situation CS Text Container CS Hyperlink",
+   "desc": "Text Text Interaction Page Load Page Load Click/Tap Font PC/MO: Samsung One 400, 16pt Left Aligned Color : #000000 Font PC/MO: Samsung One 400, 12pt Left Aligned Color : #000000 Font PC/MO : Samsung One 400, 12pt Left Aligned Color : #006BEA Text-based Hyperlink Underlined Icon PC/MO : w. 16 x h. 16 px Format : SVG <Before UK ver. CS Chat is ready> - If clicked, the background webpage is redirected to a Samsung Support Page (https:// www.samsung.com/uk/support/) *If this hyperlink is clicked, the background webpage gets directed to a certain URL within a same webpage (not creating a new webpage)"
+  },
+  {
+   "page": 34,
+   "id": "D13.0",
+   "global_name": "- Non Logged-In Users Modal Popup Container",
+   "desc": "- Container - Page Load The modal pop-up promotionally delivers the benefits of logging in to non logged-in users, to encourage login conversion. [Display Logic] The pop-up is shown only once per session, strictly for promotional purposes, and will not appear again within the same session. [Trigger] The pop-up appears once, when a non logged-in user first enters the AI Assistant landing page within the session. [Recommended Questions] (Fig. 1) Unlike logged-in users, non-logged-in users do not have associated customer data. Therefore, three preset recommended questions—one for each target business unit (MX, VD, and DA)—are displayed by default. Note: Refer to PRD Section 9 for detailed scenario definitions. Container specification PC/MO: w.328px x h.134px Background color: #FFFFFF Radius: 20px Shadow: #000000 20% / X : 0 / Y : 4 / Blur : 10 / Spread : -2"
+  },
+  {
+   "page": 34,
+   "id": "D13.1",
+   "global_name": "Non Logged-In Users Modal Popup Title text",
+   "desc": "Text Page Load Font PC/MO: Samsung One 700, 16pt, #000000 Left-aligned"
+  },
+  {
+   "page": 34,
+   "id": "D13.2",
+   "global_name": "Non Logged-In Users Modal Popup Body text",
+   "desc": "Text Page Load Font PC/MO: Samsung One 400, 12pt, #000000 Left-aligned"
+  },
+  {
+   "page": 36,
+   "id": "E1.0",
+   "global_name": "Landing Page Popup",
+   "desc": "Container Page Load Container size PC/MO : w. 328px x h. 448px (max 80% of viewport height) Container Specification Background color : #FFFFFF Radius : 12px Center - aligned"
+  },
+  {
+   "page": 36,
+   "id": "E1.1",
+   "global_name": "Popup text Container Popup ‘Headline text’ Popup ‘Close button’ Popup ‘Body text’ Popup ‘Body text Hyperlink’ Popup ‘View more button’ OK CTA",
+   "desc": "Container Text Icon Button Text Link Text Button Text Page Load Page Load Click/Tap Page Load Click/Tap Click/Tap Click/Tap g Con sists of Headline, Body Text, Close Button and ‘View more’ CTA. Headline and Close Button are top-aligned, with the Body Text and ‘View more’ CTA placed directly below. Font PC/MO : Samsung Sharp Sans, Bold, 24pt, #000000 Line Height : 1.33 Left - aligned Capitalize the 1st letter of each word except for preposition and articles. W hen pressed, close popup. Icon PC/MO : w. 24px x h. 24px, #000000 Vertically centered Format : SVG Font PC/MO : Samsung One 400, 14pt, #000000 Line Height : 1.33 Left - aligned Capitalize only the 1st letter of the 1st word except for preposition and articles. Hyperlink PC/MO : Samsung One 400, 14pt, #006BEA Underline Capitalize 1st letter of each word except for preposition and articles. Icon w.16px x h.16px Interaction When clicked, expands popup. When clicked, changes to ‘View less’ icon Font PC/MO : Samsung One 700, 12pt, #000000 Left - aligned Capitalize only the 1st letter. Max 27 characters, up to 1 line Icon - PC/MO : w. 16px xh . 16px, #000000 CTA size PC/MO : h. 40px, #000000 Center - aligned Font PC/MO : Samsung One 700, 14pt, #FFFFFF Center – aligned"
+  },
+  {
+   "page": 37,
+   "id": "E1.8",
+   "global_name": "Landing Page Popup Popup scroll bar Popup ‘View Less button’",
+   "desc": "Container Interaction Button Page Load Scroll/Drag Click/Tap When the popup content exceeds the mobile screen height (720px), the popup's max height will be constrained to 674px, and a vertical scrollbar appears to allow access to the full content. Container size - PC/MO : w. 328px x h. max 80% of viewport height Size PC/MO : w. 4px x h. 132px, #8F8F8F Radius : 4px *In case that a mouse hovers over the scroller PC : w. 4px x h. 132px, #000000 Radius: 4px Interaction When clicked, Reduction popup. When clicked, changes to ‘View more’ icon Font PC/MO : Samsung One 700, 12pt, #000000 Center - aligned Capitalize 1st letter of each word except for preposition and articles. Max 27 characters, up to 1 line Icon PC/MO : w. 16px x h. 16px, #000000"
+  },
+  {
+   "page": 39,
+   "id": "F1.0",
+   "global_name": "More Menu Floating Container",
+   "desc": "Container Click more menu When clicked the more menu button ( ), the floating menu appears. Andthe menu icon turns into a downward arrow icon ( ). If a user clicks either outside of a container or a downward arrow icon itself, it disappears and a downward arrow icon turns into a menu icon. Container size PC/MO : w. 195 x h. max 296 px When the menu list exceeds the container’s max height 296px, internal scrolling is applied to the container. Container Specification Background color : #FFFFFF Radius : 6px Shadow : #000000 20% / X : 0 / Y : 4 / Blur : 10 / Spread : -2 List Specification"
+  },
+  {
+   "page": 39,
+   "id": "F1.1",
+   "global_name": "More Menu List",
+   "desc": "List Click more menu p List Size PC/MO : w. 195 x h. 40 px Left & Middle Align Background color : #FFFFFF [Entire More Menu Option List] 1.1.1: New Chat (This option only shows up when the chat session is over) (If clicked, open “F. More menu-New chat popup“) 1.1.2: Close Chat (This option only shows up in the middle of conversation) (If clicked, open “F. More menu- Close Chat Popup“) 1.1.3: Chat History (If clicked, open “F. More menu – Chat history”) 1.1.4: Save Transcript (This option only shows up in the middle of conversation) (If clicked, open “F. More menu-Save Transcript Popup”) 1.1.5: File/Image Upload (This option only shows up in case of talking with a human live ("
+  },
+  {
+   "page": 39,
+   "id": "F1.2",
+   "global_name": "More Menu List icon Subject text",
+   "desc": "Container Link text Click more menu Click agent) (If clicked, open the native file directory UI) 1.1.6: Font Size (If clicked, open “F. More menu-Font Size Popup”) 1.1.7: Live Agent (If clicked, open “I. Connect to a live agent (ePromoter only)“) Icon PC/MO : w. 24 x h. 24 Color : #2189FF Left - aligned Format :SVG Font Focus PC/MO : Samsung One 700, 14px, #000000 Normal PC/MO : Samsung One 400, 14px, #000000 Max 17 characters, up to 1 line, Left align Capitalize 1st letter of each word except for preposition and articles. Up to 1 line"
+  },
+  {
+   "page": 40,
+   "id": "F3.0",
+   "global_name": "Top bar Container Back Button",
+   "desc": "Container Page Load The Top bar area is sticky and remains fixed at the top of the page during srcoll. Container specification PC/MO : w. 360px x h. 64px, Center - aligned Icon Page Load Icon Size : w. 24px x h. 24px, #000000, Left – aligned, Format :SVG"
+  },
+  {
+   "page": 40,
+   "id": "F3.3",
+   "global_name": "Tob bar Title Close Button Chat History List Container Chat History Container AI Chat Icon Chat History Header - Summary Chat History Subheader - Date Arrow Button Human Agent Icon Divider Notification Count 10~99+ Notification Count 0~9 CTA area Start a new chat CTA",
+   "desc": "Text Page Load Font PC/MO : Samsung One 700, 14pt, #000000, Left - aligned Icon Page Load Icon Size : w. 24px x h. 24px, #000000, Format :SVG, Right - aligned Container Page Load W hen the number of chat history items is large enough to exceed the fixed list area, internal scrolling is applied to the chat list area. Container specification PC/MO : w. 360px x h. 648px (Height is flexible depending on the height of a mobile device screen) Container Page Load Container specification PC/MO : w. 328px x h. 69px Icon Page Load Icon PC/MO : w. 32 px x h. 32 px Left-aligned Text Page Load Displays a summary of the conversation content. Font PC/MO : Samsung One 700, 14pt, #000000 Left–aligned Capitalize the 1st letter, Max 42 characters, up to 1 line Text Page Load D isplays the last date chatted. Font PC/MO : Samsung One 400, 12pt, #555555 Left-aligned Capitalize 1st letter except for preposition and articles. (Model names and technical terms must be in uppercase only) Max 40 characters, up to 1 line Icon Click/Tap Icon Size : w. 24 px x h. 24 px, #000000, Right–aligned Format :SVG Icon Page Load Icon PC/MO : w. 32 px x h. 32 px Left-aligned Line Page Load Stroke Size : w. 328px, 1px, #DDDDDD, Center–aligned Text Page Load If it exceed 99, mark ‘99+’ Icon PC/MO : w. 23px x h. 16px, ##EF3434, Radius :8px (50%) Font PC/MO : Samsung One 700, 12pt, #FFFFFF, Center – aligned Text Page Load Count value is from 1 to 99 Icon PC/MO : w. 23px x h. 16px, ##EF3434 Radius :8px (50%) Font PC/MO : Samsung One 700, 12pt, #FFFFFF, Center - aligned Container Page Load T he CTA area is sticky and remains fixed at the bottom of the page during scroll. Container specification PC/MO : w. 360px x h. 64px, Center - aligned Button Click/Tap It only appears when there is no ‘Live Chat’ available. CTA Size Size : PC/MO : h. 40px Color Fill : #2189FF, Right - aligned Font PC/MO : Samsung One 700, 14pt, #FFFFFF, Center - aligned Shadow : #000000 75% / X : 0 / Y : 0 / Blur : 3 / Spread : 0"
+  },
+  {
+   "page": 41,
+   "id": "F10.0",
+   "global_name": "No Chat History Header",
+   "desc": "Text Page Load Font PC/MO : Samsung One 700, 16pt, #000000 Center - aligned"
+  },
+  {
+   "page": 41,
+   "id": "F11.0",
+   "global_name": "No Chat History Subheader",
+   "desc": "Text Page Load Font PC/MO : Samsung One 400, 14pt, #555555 Center - aligned"
+  },
+  {
+   "page": 42,
+   "id": "F12.0",
+   "global_name": "More menu popup Container",
+   "desc": "Container Page Load Container specification PC/MO : w.328px x h.198px Center-aligned Radius : 20px Color Fill: #FFFFFF"
+  },
+  {
+   "page": 42,
+   "id": "F12.1",
+   "global_name": "More menu popup Title text",
+   "desc": "Text Page Load Fill: #FFFFFF Font PC/MO: Samsung Sharp Sans Bold, 24pt, #000000 Left-aligned"
+  },
+  {
+   "page": 42,
+   "id": "F12.2",
+   "global_name": "More menu popup Body text",
+   "desc": "Text Page Load Font PC/MO: Samsung One 400, 14pt, #000000 Left-aligned"
+  },
+  {
+   "page": 42,
+   "id": "F12.3",
+   "global_name": "More menu popup Close icon",
+   "desc": "Icon Page Load Icon PC/MO : w. 24px x h. 24px, #000000 Format: SVG Right-aligned CTA size"
+  },
+  {
+   "page": 42,
+   "id": "F12.4",
+   "global_name": "New chat popup Cancel CTA New chat popup Start CTA",
+   "desc": "Button Button Click/Tap Click/Tap PC/MO : h. 40px Format: SVG Center-aligned Color Outline: #000000 Font PC/MO: Samsung One 700, 14pt, #000000 Center-aligned CTA size PC/MO : h. 40px Format: SVG Center-aligned Color Fill: #000000 Font PC/MO: Samsung One 700, 14pt, #FFFFFF Center-aligned"
+  },
+  {
+   "page": 43,
+   "id": "F13.0",
+   "global_name": "Close chat popup CTA",
+   "desc": "Button Click/Tap CTA size PC/MO : h. 40px Format: SVG Center-aligned Color Fill: #000000 Font PC/MO: Samsung One 700, 14pt, #FFFFFF Center-aligned"
+  },
+  {
+   "page": 44,
+   "id": "F14.0",
+   "global_name": "Delete popup Save CTA",
+   "desc": "Button Click/Tap CTA size PC/MO : h. 40px Format: SVG Center-aligned Color Fill: #000000 Font PC/MO: Samsung One 700, 14pt, #FFFFFF Center-aligned"
+  },
+  {
+   "page": 45,
+   "id": "F15.0",
+   "global_name": "Font Size popup Container",
+   "desc": "Container Page Load Container specification PC/MO : w. 328p x h. 321 px Color Fill : #FFFFFF Center-aligned Radius : 24px"
+  },
+  {
+   "page": 45,
+   "id": "F15.1",
+   "global_name": "Font Size popup Title text",
+   "desc": "Text Page Load Radius : 24px Font PC/MO : Samsung Sharp Sans Bold, 24pt, #000000 Left-aligned"
+  },
+  {
+   "page": 45,
+   "id": "F15.2",
+   "global_name": "Font Size popup Close icon",
+   "desc": "Icon Page Load Icon PC/MO : w. 24px x h. 24px, #000000 Format : SVG Right-aligned"
+  },
+  {
+   "page": 45,
+   "id": "F15.3",
+   "global_name": "Font Size popup Body text",
+   "desc": "Text Page Load Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned Container specification"
+  },
+  {
+   "page": 45,
+   "id": "F15.5",
+   "global_name": "“Restore default font size” Text CTA Font Size popup Cancel CTA Font Size popup Done CTA",
+   "desc": "Button Button Button Click/Tap Click/Tap Click/Tap If clic k/tapped, the current font size gets restored to the size 14. Font PC/MO : Samsung One 700, 14pt, #000000 Underlined Center-aligned CTA size PC/MO : h. 40px Color Outline : #000000 Center-aligned Font PC/MO : Samsung One 700, 14pt, #000000 Center-aligned CTA size PC/MO : h. 40px Color Fill : #000000 Center-aligned Font PC/MO : Samsung One 700, 14pt, #FFFFFF Center-aligned"
+  },
+  {
+   "page": 46,
+   "id": "F16.0",
+   "global_name": "String for indicating a closed conversation Guidance string for a closed conversation More Menu List for a closed conversation",
+   "desc": "Text Text Container Page Load Page Load Click/Tap This string is shown if the conversation session is over. The case number of this current session should be also shown right below the closing comment. [SEC Ver.] 해당 대화가 종료되었어요. 왼쪽의 “더보기 메뉴” 아이콘을 눌러 다른 작업들을 진행할 수 있어요. Font PC/MO: Samsung One 700, 14pt, #000000 Center-aligned Capitalized the first letter. T his string is shown if the conversation session is over. In this case, the input text field has no sending button. [SEC Ver.] 왼쪽의 “더보기 메뉴”를 눌러 새 작업을 하세요 Font PC/MO: Samsung One 400, 12pt, #000000, Opacity 20% Left-aligned Capitalized the first letter. T hese more menu options (New Chat, Chat History, and Save Transcript) should be shown only at the end of conversation session For the GUI details of these more menu options, refer to ‘F1.1 More Menu List’."
+  },
+  {
+   "page": 48,
+   "id": "G1.0",
+   "global_name": "- Client Prompt Text Generating AI Prompt 4-stars Icon Generating AI Prompt Text Progress Interaction (3 Dot Loading) Generating AI Prompt Loading Text Search Bar (In Progress) Search Input Field Search Stop Button",
+   "desc": "- Text Icon Text Interaction Text Container Text Field Icon Button - Page Load Page Load Page Load Page Load Page Load Page Load Page Load Page Load While the AI is carrying out a command, the user is prevented from typing in the command prompt. While the AI is carrying out a command, the Send icon changes to a Stop icon (clicking it aborts the AI's response generation). <In case of searching via Mobile> Mobile Keypad UI should slide down within 0.5 seconds right after a user sends a query Font PC/MO: Samsung One 700, 20pt, #000000 Line Height: 1.33 Left–aligned Size PC/MO : w. 32 x h. 32 px Left–aligned Format : GIF (SVG if a motion is not considered) When generating prompts, 4-stars also rotate as a graphic motion. Font PC/MO : Samsung One 400, 14pt, #000000 Line Height: 1.36 Max 30 characters, up to 1 line Left-aligned Container PC/MO : w. 34px x h. 8px (a container that contains 3 dots) Format : json (The format could be altered by a dev.teamdecision) Font PC/MO : Samsung One 400, 14pt, #000000 Line Height: 1.36 Left-aligned T he font color changes because the prompt is unavailable when the AI is generating a response. (Size and location are the same as C6.0) Font PC/MO : Samsung One 400, 12pt, #555555 Left-aligned When clicked, the AI will stop generating the response (similar to Chat GPT) Icon PC: w.24 x h.24px Format: SVG Generating State (Stop Button): Clicking the button stops the ongoing response generation, reverting the icon back to the Send button."
+  },
+  {
+   "page": 49,
+   "id": "G7.0",
+   "global_name": "String for interrupting prompt being generated",
+   "desc": "Text Page Load [Condition Explanation] - A string being generated is forcely paused by a user (by clicking a stop button below), and then this string is displayed. - A user can retype the query again. [SEC Ver.] 해당 결과 생성이 중단 되었어요. 다시 질문을 입력해주세요. Font PC/MO: Samsung One 400, 12pt, #000000 Left-aligned"
+  },
+  {
+   "page": 51,
+   "id": "H1.1",
+   "global_name": "Generated Paragraph Text",
+   "desc": "Text Page Load Flexible depending on the AI's response to the user's question. Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned Line Height: 1.36"
+  },
+  {
+   "page": 51,
+   "id": "H1.2",
+   "global_name": "AI Generated Item Recommendation Item Specifications Title Item Specifications Description",
+   "desc": "Text Line Text Text Page Load Click/Tap Page Load All paragraphs are preceded by middle dot. Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned Capitalize 1st letter of each word except for preposition and articles. Lign Height : 1.36 U se a Hyperlink When click/tapped, the background webpage gets directed to a certain URL within a same webpage. Font PC/MO : Samsung One 400, 14pt, #006BEA Left-aligned Capitalize 1st letter of each word except for preposition and articles. Detailed model names must be in uppercase. Icon Size: w. 16 x h. 16 px Color: #006BEA Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned Capitalize only the first letter of the 1st word. Line Height : 1.36"
+  },
+  {
+   "page": 52,
+   "id": "H1.5",
+   "global_name": "- Title Text",
+   "desc": "- Text - Page Load UI elements are the same as those on the previous page unless noted otherwise below. Only the first line (model name) should be in bold. Font PC/MO: Samsung One 700, 14pt, #000000 Left-aligned Line Height : 1.36 Use a Hyperlink"
+  },
+  {
+   "page": 52,
+   "id": "H1.6",
+   "global_name": "Body Text Hyper Link",
+   "desc": "Line Text Click/Tap When click/tapped, the background webpage gets directed to a certain URL within a same webpage. Font PC/MO : Samsung One 400, 14pt, #006BEA Left-aligned Capitalize 1st letter of each word except for preposition and articles. Detailed model names and technical terms must be in uppercase. Icon Size: w. 16 x h. 16 px Color: #006BEA"
+  },
+  {
+   "page": 53,
+   "id": "H2.1",
+   "global_name": "Related Question Title",
+   "desc": "Text Page Load Font PC/MO : Samsung One 700, 14pt, #000000 Line Height : 1.36 Left - aligned Capitalize only the 1st letter of the 1st word."
+  },
+  {
+   "page": 53,
+   "id": "H2.2",
+   "global_name": "Related questions Chip Container",
+   "desc": "Container Page Load Container size PC/MO : w. max 328px x h. flexible 3 questions maximum Left-aligned Background color : #FFFFFF Opacity : 100% Radius : 16px Outline : #EEEEEE, 1px"
+  },
+  {
+   "page": 53,
+   "id": "H2.3",
+   "global_name": "Related Question Text - Single Line",
+   "desc": "Text Page Load , p Font PC/MO : Samsung One 700, 12pt, #000000 Line Height : 1.33 Center - aligned Capitalize only the 1st letter of the 1st word."
+  },
+  {
+   "page": 54,
+   "id": "H3.0",
+   "global_name": "Session Timeout Reminder Message",
+   "desc": "Text Page Load Session Timeout Policy The chat session automatically closes after 30 minutes of user inactivity. A session timeout reminder message is triggered after 25 minutes of user inactivity, 5 minutes before the session automatically closes. The inactivity timer resets on user message submission. Display Rules The message is generated in the ongoing chat stream regardless of whether the chat panel/modal is currently open or minimized. If the chat is minimized when triggered, the user will see this message as the latest chat message upon reopening the chat. Font PC/MO : Samsung One 400, 14pt, #000000 Use Samsung One 700, 14pt, #000000 for the time indicator text (e.g., close in 5 minutes) Left-aligned"
+  },
+  {
+   "page": 55,
+   "id": "H3.1",
+   "global_name": "Session Timout Reminder Snackbar (PC/Mo Web) Session Timout Reminder Toast (ShopApp Only)",
+   "desc": "Snackbar Toast Page Load Page Load Display Rules Condition: If the chat is minimized at the 25-minute mark of user inactivity (5 minutes before automatic closure), a session timeout reminider snackbar is triggered horizontally centered, positioned 24px above the bottom edge The snackbar automatically disappears after 3 seconds. Interaction Clicking/tapping the minimized chat entry point(Side handle/GNB AI Entry Point) reopens the chat. Upon reopening, ‘H. Session Timeout Reminder Message’ is displayed at the bottom of the active chat. Snackbar Container Container Box Size PC: w. Adapts to text length within minimum and maximum values. (Minimum width: 448px, Maximum with: 684px) x h. 64 px Mo Web: w. 312 x h. (flexible) px Radius: 6px Fill: #313131 Font PC: Samsung One 400, 14pt, #FFFFFF Mobile Web: Samsung One 400, 12pt, #FFFFFF Max Character Count: 67 Left-aligned CTA PC/MO: Samsung One 700, 14pt, #FFFFFF Underlined Type Right-aligned When clicked, the snackbar closes. Display Rules Condition: If the chat is minimized at the 25-minute mark of user inactivity (5 minutes before automatic closure), a session timeout reminider snackbar is triggered horizontally centered, positioned 88dp above the bottom edge. The toast automatically disappears after 3 seconds. Interaction Clicking/tapping BNB menu reopens the chat. Upon reopening, ‘H. Session Timeout Reminder Message’ is displayed at the bottom of the active chat. Toast Container Container Box Size: w. Adapts to text length within maximum values (312dp) x h. 64 px x h. (flexible) px Radius: 6px Fill: #313131, Opacity 80% Font Roboto, Regular, 14pt, #FFFFFF Center-aligned Max Character Count: 96"
+  },
+  {
+   "page": 59,
+   "id": "H7.1",
+   "global_name": "Table Category Cell",
+   "desc": "Text Page Load Fig 1.) At the default screen size, when the content spans three or more columns, only about one-third of the third screen is displayed. Fig 2.) When the AI ​Assistant screen is expanded to its maximum size, the table width widens to fill the available space. Font PC/MO : Samsung one 700, 16pt, #000000 Left-aligned"
+  },
+  {
+   "page": 59,
+   "id": "H7.2",
+   "global_name": "Table Header Cell (Column)",
+   "desc": "Text Page Load Font PC/MO : Samsung one 700, 16pt, #000000 Left-aligned"
+  },
+  {
+   "page": 59,
+   "id": "H7.3",
+   "global_name": "Horizontal Divider",
+   "desc": "Divider Page Load Size PC/MO : w. (flexible) x h. 1 px - It adjusts flexibly to the length of the top title text. Color : #000000"
+  },
+  {
+   "page": 59,
+   "id": "H7.4",
+   "global_name": "Table Header Cell (Row)",
+   "desc": "Text Page Load Font PC/MO : Samsung one 700, 12pt, #000000 Left-aligned"
+  },
+  {
+   "page": 59,
+   "id": "H7.5",
+   "global_name": "Table Body Cell",
+   "desc": "Text Page Load Font PC/MO : Samsung one 400, 12pt, #000000 Left-aligned"
+  },
+  {
+   "page": 59,
+   "id": "H7.6",
+   "global_name": "Horizontal Divider",
+   "desc": "Divider Page Load Size PC/MO : w. (flexible) x h. 1 px - It adjusts flexibly to the length of the table width. Color : #DDDDDD When scrolling, the table and scroll bar moves horizontally from left to right of the"
+  },
+  {
+   "page": 59,
+   "id": "H7.7",
+   "global_name": "Horizontal Scroll Indicator",
+   "desc": "Scroll Bar Click/Drag When scrolling, the table and scroll bar moves horizontally from left to right of the screen. Indicator Container PC/MO : w. 328 x h. 2 px, #000000, Opacity 10% Radius: 1 px Scroll Bar PC/MO : w. 106 x h. 2 px, #000000 Radius: 1 px"
+  },
+  {
+   "page": 61,
+   "id": "H8.0",
+   "global_name": "Search Bar Area (Conversation Time- Out status)",
+   "desc": "Container Page Load Container Size PC/MO : w.328px x h.80px Radius: 20px Color Fill Color: #FFFFFF Stroke: 1px (Inside), Color: Linear Gradient - 0%: 3DCC87 - 100%: 387AFF"
+  },
+  {
+   "page": 61,
+   "id": "H8.1",
+   "global_name": "Text for Conversation Time- Out Status",
+   "desc": "Text Page Load 100% 387AFF Drop Shadow: X: 0, Y: 4, Blur: 10, Spread: -2, Color: #000000 (Opacity: 20%) Font PC/MO : Samsung One 400, 12pt, #555555 Center-aligned W hen click/tapping this CTA, a new chat starts with a landing page D. Landing Page _ F L gg d i )"
+  },
+  {
+   "page": 61,
+   "id": "H8.2",
+   "global_name": "_Ver “Start a new Chat” CTA",
+   "desc": "\"For Logged-in users). CTA size PC/MO : w. 119 x h. 32px, #2189FF Center-aligned Font PC/MO : Samsung One 700, 12pt, #FFFFFF Center-aligned Shadow : #000000 75% / X : 0 / Y : 0 / Blur : 3 / Spread : 0 r.1.4.5 Interaction Click/Tap"
+  },
+  {
+   "page": 62,
+   "id": "H9.0",
+   "global_name": "“Restart the Chat” CTA",
+   "desc": "Interaction Click/Tap * When clicking this CTA, a new chat starts with a landing page (D. Landing Page _ \"For Logged-in users). CTA size PC/MO : w. 149 x h. 40px, #2189FF Left-aligned Font PC/MO : Samsung One 700, 14pt, #FFFFFF Center-aligned Shadow : #000000 75% / X : 0 / Y : 0 / Blur : 3 / Spread : 0"
+  },
+  {
+   "page": 63,
+   "id": "H10.0",
+   "global_name": "String for indicating a closed conversation Text",
+   "desc": "Page Load This string is shown if the conversation session is over. The case number of this current session should be also shown right below the closing comment. [SEC Ver.] 해당 대화가 종료되었어요. 왼쪽의 “더보기 메뉴” 아이콘을 눌러 다른 작업들을 진행할 수 있어요. Font PC/MO: Samsung One 700, 14pt, #000000 Center-aligned Capitalized the first letter."
+  },
+  {
+   "page": 63,
+   "id": "H10.1",
+   "global_name": "Guidance string for a closed conversation More Menu List for a closed conversation Text Container",
+   "desc": "Page Load Click/Tap T his string is shown if the conversation session is over. In this case, the input text field has no sending button. [SEC Ver.] 왼쪽의 “더보기 메뉴”를 눌러 새 작업을 하세요 Font PC/MO: Samsung One 400, 12pt, #000000, Opacity 20% Left-aligned Capitalized the first letter. T hese more menu options (New Chat, Chat History, and Save Transcript) should be shown only at the end of conversation session For the GUI details of these more menu options, refer to ‘F1.1 More Menu List’."
+  },
+  {
+   "page": 64,
+   "id": "H11.0",
+   "global_name": "Search Bar Area (End of Past Conversation)",
+   "desc": "Container Page Load Container Size PC/MO : w.328px x h.80px Radius: 20px Color Fill Color: #FFFFFF Stroke: 1px (Inside), Color: Linear Gradient - 0%: 3DCC87 - 100%: 387AFF"
+  },
+  {
+   "page": 64,
+   "id": "H11.1",
+   "global_name": "Text for End of Past Conversation Ver",
+   "desc": "Text Page Load 100% 387AFF Drop Shadow: X: 0, Y: 4, Blur: 10, Spread: -2, Color: #000000 (Opacity: 20%) Font PC/MO : Samsung One 400, 12pt, #555555 Center-aligned * When click/tapping this CTA, a page redirects to the chat history UI(F. More Menu - Chat History), for user to give a choice to going back to the current chat session. <Korean Ver > r1 4 5"
+  },
+  {
+   "page": 64,
+   "id": "H11.2",
+   "global_name": "_Ver “Go back to Chat History” CTA",
+   "desc": "<Korean Ver.> Container String: 대화가 종료되었습니다 CTA String: 모든 대화로 돌아가기 CTA size PC/MO : w. 119 x h. 32px, #2189FF Center-aligned Font PC/MO : Samsung One 700, 12pt, #FFFFFF Center-aligned Shadow : #000000 75% / X : 0 / Y : 0 / Blur : 3 / Spread : 0 r.1.4.5 Interaction Click/Tap"
+  },
+  {
+   "page": 65,
+   "id": "H12.1",
+   "global_name": "Thumbs Up/Down Feedback - Icon Icon",
+   "desc": "Page Load Container background color : #000000, Opacity: 72% Icon Size : w. 16 x h. 16 px Format : SVG"
+  },
+  {
+   "page": 65,
+   "id": "H12.2",
+   "global_name": "Thumbs Up/Down Feedback - Text Text",
+   "desc": "Page Load Font PC/MO : Samsung One 400, 12pt, #FFFFFF Center-aligned"
+  },
+  {
+   "page": 66,
+   "id": "H13.1",
+   "global_name": "Feedback Container Headline",
+   "desc": "Text Page Load Container Size Default w.101px x h.57px Radius: 20px Font PC/MO : Samsung One 700, 14pt, #000000 Left aligned"
+  },
+  {
+   "page": 66,
+   "id": "H13.3",
+   "global_name": "Feedback Container Option Question",
+   "desc": "Text Conditional W hen select the checkbox, an additional input box is displayed below, and the ‘H13.8 Submit CTA is activated. -PC/MO : Samsung One 700, 12pt, #FFFFFF -Center aligned Icon (F43.1) -Type: SVG Left-aligned Font PC/MO : Samsung One 400, 12pt, #000000 Left-aligned"
+  },
+  {
+   "page": 66,
+   "id": "H13.4",
+   "global_name": "Feedback Container Option List",
+   "desc": "Container Conditional Container PC/MO : w. 328 x h. 204 px Radius : 8px Color : Fill #FFFFFF Icon Size : w. 20 x h. 20 px Format : SVG Default: Outline 1px, #8F8F8F Selected: Fill #000000, Check Icon #FFFFFF Font PC/MO : Samsung One 400, 12pt, #000000 Left-aligned"
+  },
+  {
+   "page": 68,
+   "id": "H14.1",
+   "global_name": "Survey Title",
+   "desc": "Text Page Load Container Size Default w.101px x h.57px Radius: 20px Font PC/MO : Samsung Sharp Sans Bold, 24pt, #000000 Left aligned"
+  },
+  {
+   "page": 68,
+   "id": "H14.10",
+   "global_name": "Cancel CTA Submit CTA Required Field Error Message",
+   "desc": "2. Endpoint Label Text PC/MO : Samsung One 700, 12pt, #000000 Min(1): Left-aligned, Max(10): Right-aligned Even if the chat window size increases, the margin between the texts remains constant. CTA Click/Tap Clicking/tapping closes the survey popup and returns to the chat screen. Outlined CTA PC/MO: w. 148 x h. 40 px Radius : 20px Left-Aligned Color: Outline #000000, 1px Font PC/MO: Samsung One 700, 14 pt Center-Aligned Color : #000000 CTA Click/Tap Clicking/tapping submits the survey and closes popup if all mandatory fields are answerd. Otherwise, displays an error message. Filled CTA PC/MO: w. 148 x h. 40 px Radius : 20px Right-Aligned Color: Fill #000000 Font PC/MO: Samsung One 700, 14pt Center-Aligned Color : #FFFFFF Text Conditional An error message is displayed if the ‘Submit’ button is clicked while any mandatory field is unanswered. Font PC/MO: Samsung One 400, 14pt Left-Aligned Color : #D62E2E Icon PC/MO: w. 12 x h. 12 px"
+  },
+  {
+   "page": 69,
+   "id": "H14.12",
+   "global_name": "Additional Feedback Headline",
+   "desc": "Text Conditional Additional Feedback Field appears when ‘H14.3 Survey Star Rating Icon - Overall Satisfaction’ is rated 3 or lower. Font PC/MO : Samsung One 400, 12pt, #000000 Left-aligned When select the input box, the focus status is displayed with a blue border. (Fig. 3) When typing in the container, it changes from default to active state."
+  },
+  {
+   "page": 69,
+   "id": "H14.13",
+   "global_name": "Additional Feedback Input Field",
+   "desc": "Container Conditional Container Size: w. 328 x h. 80 px Radius: 8px Inactive (Default State) --> Fill Color: #FFFFFF Stroke: 1px (Inside), #555555 Active (On typing) --> Fill Color: #FFFFFF Stroke: 2px (Inside), #2189FF Enables internal scrolling when text overflows the fixed height of 80px. Font Inactive (Default State) --> PC: Samsung One 400, 14pt, #555555 Active (On typing) --> PC: Samsung One 400, 14pt, #000000 Left-aligned Text automatically wraps to the next line when it reaches the flexible width of the container."
+  },
+  {
+   "page": 70,
+   "id": "H14.14",
+   "global_name": "Feedback Survey Submission Success Message",
+   "desc": "Icon Page Load Upon successful feedback survey submission, a success message is displayed at the bottom of the session-expired chat screen. Icon Size : w. 32 x h. 32 px Format : SVG Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned"
+  },
+  {
+   "page": 72,
+   "id": "H15.0",
+   "global_name": "Login Prompt",
+   "desc": "Text Page Load When a non-logged-in user's query requires a login CTA based on system logic, the 'Sign in / Sign up' CTA is displayed within the chat response. Since a modal pop-up for promotional purposes is limited to once per session, the in- chat CTA becomes the primary conversion path for subsequent responses. [Logic] Trigger: The 'Sign in / Sign up' CTA is displayed alongside the response when required by system logic. Layout with Product Card: If a product card is included in the response, the CTA is placed after the product card. (Fig. 4) Frequency Limit: The CTA is displayed up to 2 times within a single session. From the 3rd query that logically requires a login, the CTA will no longer be displayed. (Fig. 5) Post-Login: Upon successful login, the session restarts and the user is redirected to the AI Chat Landing Page. Depending on the specific logic case that triggers the login requirement, a corresponding 'login induction message' is displayed above the CTA. Font PC/MO : Samsung One 400, 12pt, #000000 Left-aligned When clicked/tapped, redirect to Samsung Account Page for sign in/sign up."
+  },
+  {
+   "page": 73,
+   "id": "H16.0",
+   "global_name": "Scroll to Bottom FAB",
+   "desc": "Button Click/Tap Interaction The FAB appears when the user scrolls up from the bottom of the chat view. It disappears when the user reaches the very bottom. Clicking/Tapping the FAB scrolls the view down to the very bottom of the chat. Container PC/MO : w. 40 x h. 40 px Color: #000000, Opacity 50% Arrow Icon PC/MO : w. 16 x h. 16 px Color: #FFFFFF Right-aligned"
+  },
+  {
+   "page": 76,
+   "id": "I9.0",
+   "global_name": "- Assistant Text d _V",
+   "desc": "- Text - Page Load This case applies when the user selects the 'No' option. When the 'No' option is selected, the corresponding screen appears, and the Search Bar is reactivated. The message is displayed when the 'No' button is clicked/tapped. Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned Ver.1.4"
+  },
+  {
+   "page": 77,
+   "id": "I10.0",
+   "global_name": "Generating AI Prompt Text",
+   "desc": "Text Page Load Font PC/MO : Samsung One 700, 14pt, #000000 Left-aligned Container ("
+  },
+  {
+   "page": 77,
+   "id": "I11.0",
+   "global_name": "Product Type Option Chip Reaction Button Area",
+   "desc": "Option Chip Icon Button Click/Tap Click/Tap PC/MO : w. (flexible) x h. 32px The width value is adjusted to match the length of the longest text. Fill : #FFFFFF Outline : #EEEEEE, 1px Left-aligned Font PC/MO : Samsung One 700, 12pt, #000000 Center-aligned F or more specific guide refer to I6.0, I6.1, and I6.2."
+  },
+  {
+   "page": 78,
+   "id": "I13.0",
+   "global_name": "Client Prompt Text",
+   "desc": "Text Page Load Font PC/MO : Samsung One 700, 20pt, #000000 Left-aligned"
+  },
+  {
+   "page": 78,
+   "id": "I14.0",
+   "global_name": "Generating AI Prompt 4-stars Icon Generating Text Reaction Button Area",
+   "desc": "Icon Text Icon Button Page Load Page Load Click/Tap Size PC/MO : w. 32 x h. 32 px Left–aligned Format : SVG Displayed the estimated waiting time and a message asking you to wait a moment, before being connected to a Live agent. Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned F or more specific guide refer to I6.0, I6.1, and I6.2."
+  },
+  {
+   "page": 79,
+   "id": "I17.0",
+   "global_name": "‘New Chat’ Session Marker ‘ePromoter’ Profile Icon ‘ePromoter’ Generating Text",
+   "desc": "Text Icon Text Page Load Page Load Page Load The \"new chat\" message is displayed when connected to a Live agent and available to chat. Font PC/MO : Samsung One 700, 14pt, #000000 Center-aligned Icon PC/MO : w. 32 x h. 32 px Left-aligned Format: SVG *Default live agent profile icon Font PC/MO : Samsung One 400, 14pt, #000000 Left-aligned %s1d: Name of a CS Live Agent !@#$$%d: Chat Reference Number %s2d: Account name of a customer"
+  }
+ ]
+}
